@@ -15,13 +15,13 @@ const FirstSection = () => {
                 navigate("/auth")
               }}>Login</button>
               <button className="px-6 py-3 hover:bg-white hover:border-[#40196D] border transition-all duration-300 rounded-md bg-[#40196D] text-white hover:text-[#40196D]" onClick={() => {
-                navigate("/signup")
+                navigate("/auth/signup")
               }}>Signup</button>
 
             </div>
           </div>
           <div className="w-[45%] h-[500px] max-md:hidden flex items-center justify-between">
-            <img className="w-full h-[400px] border object-cover" src={vite} />
+            <img className="w-full h-[400px]  object-cover" src={vite} />
           </div>
         </div>
         <div className="flex w-full flex-col items-center h-auto max-md:mt-7">
