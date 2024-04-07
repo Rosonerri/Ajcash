@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Bruv;
+  src: url(/font/Poppins-Light.ttf);
+}
+
+.Bruv {
+  font-family: Bruv;
+}
+
+@font-face {
+  font-family: Poppin;
+  src: url(/font/Poppins-Regular.ttf);
+}
+
+.Poppin {
+  font-family: Poppin;
+}
+
+@font-face {
+  font-family: Blud;
+  src: url(/font/Poppins-Bold.ttf);
+}
+
+.Bold {
+  font-family: Blud;
+}
+
+:root {
+  font-family: Poppin, Bruv, Blud;
+  line-height: 1.5;
+  font-weight: 400;
+}
