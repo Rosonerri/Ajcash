@@ -8,6 +8,11 @@ import Signin from "../pages/auth/signin/Signin"
 import Register from "../pages/auth/register/Register"
 import Dashboard from "../pages/home/dashboard/Dashboard"
 import AccountLayout from "../components/layout/AccountLayout"
+import Pay from "../pages/home/pay/Pay"
+import Send from "../pages/home/send/Send"
+import Account from "../pages/home/account/Account"
+import Budget from "../pages/home/budget/Budget"
+import Card from "../pages/home/card/Card"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -41,7 +46,27 @@ export const mainRoute = createBrowserRouter([
             {
                 index: true,
                 element: <Dashboard />
-            }
+            },
+            {
+                path: "/dashboard/pay",
+                element: <Pay />
+            },
+            {
+                path: "/dashboard/send",
+                element: <Send />
+            },
+            {
+                path: "/dashboard/account",
+                element: <Account />
+            },
+            {
+                path: "/dashboard/budget",
+                element: <Budget />
+            },
+            {
+                path: "/dashboard/card",
+                element: <Card />
+            },
         ]
     }
 ])

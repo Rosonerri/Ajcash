@@ -5,13 +5,13 @@ import { useSelector } from "react-redux"
 
 const AccountLayout = () => {
 
-    const toggle = useSelector((state: any) => state.bar)
+    const toggle = useSelector((state: any) => state.mobile)
     return (
         <div className="flex justify-between">
-            <div className={`${toggle? "w-[200px] " : "w-[100px]"} max-lg:hidden bg-black text-white`}>
+            <div className={`${toggle ? "w-[200px] " : "w-[100px]"} max-lg:hidden bg-[#40196D] text-white`}>
                 <DashBoardSider />
             </div>
-            <MobileDashboard />
+            <div className={`${toggle ? "w-[250px] " : "w-[0px]"} max-md:flex hidden  text-white`}> <MobileDashboard /></div>
             <Outlet />
         </div>
     )
