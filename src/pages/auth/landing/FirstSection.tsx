@@ -25,7 +25,7 @@ const FirstSection = () => {
           </div>
         </div>
         <div className="flex w-full flex-col items-center h-auto max-md:mt-7">
-          <div className="w-full flex items-center justify-center text-[40px] font-[Blud] text-gray-700 text-center">Bank with <span className="ml-2 text-[#40196D]"> Ajcash</span></div>
+          <div className="w-full flex justify-center text-[40px] font-[Blud] text-gray-700 text-center ">Bank with Ajcash </div>
           <div className="w-[60%] text-center max-md:w-full max-lg:w-[70%]">Enjoy a transfer success rate of 99.5% and experience seamless payment transfers. Need to pay some bills, pay a business or send money to a friend? Ajcash transfers go through every time. We mean it.</div>
         </div>
       </div>
