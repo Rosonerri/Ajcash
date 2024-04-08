@@ -6,6 +6,8 @@ import LandingScreen from "../pages/auth/landing/LandingScreen"
 import AuthLayout from "../components/layout/AuthLayout"
 import Signin from "../pages/auth/signin/Signin"
 import Register from "../pages/auth/register/Register"
+import Dashboard from "../pages/home/dashboard/Dashboard"
+import AccountLayout from "../components/layout/AccountLayout"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -29,6 +31,16 @@ export const mainRoute = createBrowserRouter([
             {
                 path: "/auth/signup",
                 element: <Register />
+            }
+        ]
+    },
+    {
+        path: "/dashboard",
+        element: <AccountLayout />,
+        children: [
+            {
+                index: true,
+                element: <Dashboard />
             }
         ]
     }

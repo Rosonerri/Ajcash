@@ -3,7 +3,7 @@ import student from "../../../assets/undraw_projections_re_ulc6.svg";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-
+import { MdOutlineChevronLeft } from "react-icons/md"
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -60,6 +60,9 @@ const Register = () => {
                         >
                             <div className="flex justify-between items-center w-full my-2">
                                 <div className="font-bold">AJMoney</div>
+                                <div className="flex items-center text-[#40196D] hover:cursor-pointer" onClick={() => {
+                                    navigate(-1)
+                                }}> <div><MdOutlineChevronLeft className="text-2xl" /></div>Back</div>
                             </div>
                             <div className="mt-8 text-[40px] font-[Blud] text-center">
                                 Create An Account

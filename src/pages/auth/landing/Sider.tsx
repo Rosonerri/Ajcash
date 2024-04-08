@@ -25,10 +25,10 @@ const Sider = () => {
                     </div>
                 </div>
                 <div className="flex flex-col w-[95%] ">
-                    <div className="font-[Blud]  my-5 hover:cursor-pointer text-black w-[100px]">Home</div>
-                    <div className="font-[Blud] my-5 hover:cursor-pointer text-black relative">Personal</div>
-                    <div className="font-[Blud] my-5 hover:cursor-pointer text-black">Business</div>
-                    <div className="font-[Blud] my-5 hover:cursor-pointer text-black">Company</div>
+                    <div className="font-[Blud]  my-4 hover:cursor-pointer text-black w-[100px]">Home</div>
+                    <div className="font-[Blud] my-4 hover:cursor-pointer text-black relative w-[100px]">Personal</div>
+                    <div className="font-[Blud] my-4 hover:cursor-pointer text-black w-[100px]">Business</div>
+                    <div className="font-[Blud] my-4 hover:cursor-pointer text-black w-[100px]">Company</div>
                 </div>
             </div>
         </>
