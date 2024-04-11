@@ -27,7 +27,7 @@ const MobileDashboard = () => {
   const location = useLocation()
   const active = location.pathname
   return (
-    <motion.div variants={variant} initial={false} animate={toggle ? "open" : "close"} className={`${toggle ? "w-[200px]" : "w-[0px]"} z-[9999] h-screen   bg-white  flex-col items-center fixed max-lg:flex hidden`}>
+    <motion.div variants={variant} initial={false} animate={toggle ? "open" : "close"} className={`${toggle ? "w-[200px]" : "w-[0px]"} z-[9999] h-screen   bg-white  flex-col items-center fixed max-lg:flex hidden shadow-2xl`}>
       <div className="my-6 font-[Blud] text-[20px]">Ajcash</div>
       <div className={`my-[10px] flex items-center  ${active === "/dashboard" ? "bg-black text-white" : ""}  px-4 py-2 rounded-md transition-all duration-300 hover:cursor-pointer`} onClick={() => {
         navigate("/dashboard")

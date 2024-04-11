@@ -22,16 +22,16 @@ const Dashboard = () => {
         </div>
 
         <div className="py-[10px] flex  justify-between max-md:flex-col">
-          <div className="w-[55%] h-[250px] my-3 flex  justify-between ">
-            <div className="w-[100%] h-full flex-col flex items-center max-md:w-full ">
+          <div className="w-[60%] max-lg:w-full h-[250px] my-3 flex  justify-between ">
+            <div className="w-[100%] h-full flex-col flex items-center  ">
               <div className="flex items-center justify-between w-[95%]">
                 <div className="text-[#40196D] font-bold">
                   Welcome Back , <span className="text-[20px]">Francis</span>
                 </div>
               </div>
-              <div className="w-[95%] h-[150px]  flex justify-between items-center my-10 ">
+              <div className="w-full h-[150px]  flex justify-between items-center my-10 ">
                 <div className="flex items-center  w-[90%]">
-                  <div className=" w-[70%]">
+                  <div className=" w-[75%]">
                     <div className="text-[30px] font-black">
                       {eye ? "₦20,300.36" : "₦*****"}
                     </div>
@@ -41,11 +41,11 @@ const Dashboard = () => {
                     <div className="text-[14px] font-semibold text-gray-700 my-1">
                       Credit Limit
                     </div>
-                    <div className="flex my-5 justify-between">
-                      <button className="bg-[#40196D] text-white px-8 py-2 text-[14px] rounded-md font-thin">
+                    <div className="flex my-5 ">
+                      <button className="bg-[#40196D] text-white px-8 py-3 text-[14px] rounded-md font-thin">
                         Make Payment
                       </button>
-                      <button className="ml-4 border-[1px] border-[#40196D] text-[14px]  px-8 py-2 rounded-md hover:bg-gray-800 transition duration-300 hover:cursor-pointer hover:text-white text-[#40196D]">
+                      <button className="ml-4 border-[1px] border-[#40196D] text-[14px]  px-8 py-3 rounded-md hover:bg-gray-800 transition duration-300 hover:cursor-pointer hover:text-white text-[#40196D]">
                         Requisites{" "}
                       </button>
                     </div>
@@ -119,7 +119,7 @@ const Dashboard = () => {
             </h4>
           </div>
 
-          <div className="w-[100%] flex items-center h-[40px] mt-[10px] border border-[#EBE8FF] rounded-lg pl-[40px] pr-[40px] justify-between mb-[10px]">
+          <div className="w-[100%] flex  items-center h-[40px] mt-[10px] border border-[#EBE8FF] rounded-lg justify-between mb-[10px]">
             <div className="flex items-center w-[205px]">
               <img src={""} alt="" className="h-[27px]" />
               <p className="text-[#797D8C] text-[14px] ml-[22px]">
@@ -129,7 +129,7 @@ const Dashboard = () => {
 
             <p className="text-[14px] font-[700] w-[85px]"># 2540.58</p>
 
-            <p className="text-[14px] text-[#797D8C] w-[85px]">150 Products</p>
+            <p className="text-[14px] text-[#797D8C] w-[85px] max-md:hidden" >150 Products</p>
 
             <p className="text-[14px] text-[#F7941D] w-[85px]">Credit</p>
 
@@ -137,60 +137,7 @@ const Dashboard = () => {
               <HiOutlineDotsVertical />
             </div>
           </div>
-          <div className="w-[100%] flex items-center h-[40px] mt-[10px] border border-[#EBE8FF] rounded-lg pl-[40px] pr-[40px] justify-between mb-[10px]">
-            <div className="flex items-center w-[205px]">
-              <img src={""} alt="" className="h-[27px]" />
-              <p className="text-[#797D8C] text-[14px] ml-[22px]">
-                Nicholas Patrick
-              </p>
-            </div>
 
-            <p className="text-[14px] font-[700] w-[85px]"># 2540.58</p>
-
-            <p className="text-[14px] text-[#797D8C] w-[85px]">150 Products</p>
-
-            <p className="text-[14px] text-[#F7941D] w-[85px]">Credit</p>
-
-            <div className="text-primary cursor-pointer w-[85px] flex justify-end">
-              <HiOutlineDotsVertical />
-            </div>
-          </div>
-          <div className="w-[100%] flex items-center h-[40px] mt-[10px] border border-[#EBE8FF] rounded-lg pl-[40px] pr-[40px] justify-between mb-[10px]">
-            <div className="flex items-center w-[205px]">
-              <img src={""} alt="" className="h-[27px]" />
-              <p className="text-[#797D8C] text-[14px] ml-[22px]">
-                Nicholas Patrick
-              </p>
-            </div>
-
-            <p className="text-[14px] font-[700] w-[85px]"># 2540.58</p>
-
-            <p className="text-[14px] text-[#797D8C] w-[85px]">150 Products</p>
-
-            <p className="text-[14px] text-[#F7941D] w-[85px]">Credit</p>
-
-            <div className="text-primary cursor-pointer w-[85px] flex justify-end">
-              <HiOutlineDotsVertical />
-            </div>
-          </div>
-          <div className="w-[100%] flex items-center h-[40px] mt-[10px] border border-[#EBE8FF] rounded-lg pl-[40px] pr-[40px] justify-between mb-[10px]">
-            <div className="flex items-center w-[205px]">
-              <img src={""} alt="" className="h-[27px]" />
-              <p className="text-[#797D8C] text-[14px] ml-[22px]">
-                Nicholas Patrick
-              </p>
-            </div>
-
-            <p className="text-[14px] font-[700] w-[85px]"># 2540.58</p>
-
-            <p className="text-[14px] text-[#797D8C] w-[85px]">150 Products</p>
-
-            <p className="text-[14px] text-[#F7941D] w-[85px]">Credit</p>
-
-            <div className="text-primary cursor-pointer w-[85px] flex justify-end">
-              <HiOutlineDotsVertical />
-            </div>
-          </div>
         </div>
       </div>
     </>
