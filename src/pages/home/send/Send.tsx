@@ -2,8 +2,8 @@
 const Send = () => {
     return (
       <>
-        <div className="w-full min-h-[100vh] text-black">
-          <div>Send</div>
+        <div className="w-full h-[screen] text-black">
+          <div className="max-lg:mt-16">Send</div>
         </div>
       </>
     )
