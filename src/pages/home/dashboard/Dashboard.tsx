@@ -1,17 +1,9 @@
-import { IoSearchSharp } from "react-icons/io5";
-import { FaBell } from "react-icons/fa6";
-import { IoMdArrowDropdown } from "react-icons/io";
 import { HiOutlineDotsVertical } from "react-icons/hi";
-import { PiArrowUpRightFill, PiArrowDownLeftFill } from "react-icons/pi";
-import { MdOutlineMenu } from "react-icons/md";
+import { PiArrowUpRightFill } from "react-icons/pi";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Charts from "./Charts";
-import { ScaleLoader } from "react-spinners";
-import { motion } from "framer-motion"
-import { useDispatch } from "react-redux";
-import { logOut } from "../../../global/GlobalState";
-import { Link } from "react-router-dom";
+
 import Card from "./Card";
 
 
@@ -20,74 +12,16 @@ const Dashboard = () => {
   const onEye = () => {
     setEye(!eye);
   };
-
-  const [drop, setDrop] = useState<boolean>(false)
-  const onDrop = () => {
-    setDrop(!drop);
-  }
-
-  const dispatch = useDispatch()
-
   return (
     <>
-      <div className="w-[82%] bg-white text-black absolute right-0  rounded-tl-[30px] rounded-bl-[30px] pt-[20px] pb-[10px] pl-[27px] pr-[27px] flex-col max-md:w-[100%]  ">
+      <div className="w-full bg-white text-black   pt-[20px] pb-[10px] pl-[27px] pr-[27px] flex-col   ">
         <div className="flex w-[100%] items-center justify-between">
           <div className="flex items-center">
-            <div className="hidden max-md:flex text-[22px] text-[#797D8C] cursor-pointer">
-              <MdOutlineMenu />
-            </div>
-            <h3 className="text-[20px] font-[500] ml-[12px]">DashBoard Home</h3>
-          </div>
-
-          <div className="flex items-center">
-            <div className="flex items-center w-[270px] h-[30px] bg-[#4f41bc1a] rounded-full overflow-hidden max-md:hidden">
-              <input
-                type="text"
-                placeholder="Search"
-                className="flex-1 h-[100%] outline-none pl-[13px] pr-[10px] bg-transparent text-[13px] placeholder:text-primary"
-              />
-              <div className="w-[35px] h-[100%] flex justify-center items-center text-primary">
-                <IoSearchSharp />
-              </div>
-            </div>
-
-            <div className="text-primary ml-[40px] text-[22px] relative cursor-pointer md:hidden">
-              <FaBell />
-              <div className="w-[10px] h-[10px] rounded-full bg-[#EA8F95] absolute right-[0px] top-[3px]"></div>
-            </div>
-
-            <div className="flex items-center ml-[40px] cursor-pointer relative" onMouseEnter={onDrop} onMouseLeave={onDrop}>
-              {drop ? <motion.div initial={{ y: "80px", opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="absolute w-full h-[150px] z-[300] flex flex-col items-center top-8 bg-white rounded-md shadow-md right-0">
-                <Link to="/dashboard/my-account">
-
-                  <div className="my-4 flex items-center">
-                    <img src="" className="w-[35px] h-[35px] rounded-full border  mr-3" alt="" />
-                    <div className="">Danielle</div>
-                  </div>
-                </Link>
-                <div className="text-[red] " onClick={() => {
-                  dispatch(logOut())
-                }}>Logout</div>
-              </motion.div> : null}
-              <div className="w-[35px] h-[35px] rounded-full">
-                <img
-                  src={""}
-                  alt=""
-                  className="w-[100%] h-[100%] object-cover"
-                />
-              </div>
-              <p className="ml-[7px] text-[14px] text-[#54657E]">
-                Danielle Francis
-              </p>
-              <div className="text-[#54657E] ml-[15px]">
-                <IoMdArrowDropdown />
-              </div>
-            </div>
-
+            <h3 className="text-[20px] font-[Blud] ml-[12px]">Dashboard</h3>
           </div>
         </div>
 
-        <div className="py-[10px] flex  justify-between">
+        <div className="py-[10px] flex  justify-between max-md:flex-col">
           <div className="w-[55%] h-[250px] my-3 flex  justify-between ">
             <div className="w-[100%] h-full flex-col flex items-center max-md:w-full ">
               <div className="flex items-center justify-between w-[95%]">
@@ -133,13 +67,13 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className=" w-[40%] flex justify-center items-center">
+          <div className="w-[350px] flex justify-center items-center">
             <Card />
           </div>
         </div>
 
-        <div className="flex items-center justify-between mt-[5px] md:flex-wrap">
-          <div className="w-[247px] md:w-[49%] md:mb-[12px] p-[15px] relative border border-[#D3CBFB] rounded-lg">
+        <div className="flex items-center justify-between max-lg:flex-col mt-[5px] ">
+          <div className="w-[49%] max-lg:w-full  md:mb-[12px] p-[15px] relative border border-[#D3CBFB] rounded-lg">
             <p className="text-[15px] text-[#797D8C]">Total Balance</p>
             <h3 className="font-[700] text-[19px]">
               {eye ? <div>₦ 21,200.00</div> : <div>₦ *******</div>}
@@ -167,83 +101,6 @@ const Dashboard = () => {
                   <FaEye className="text-[20px] hover:cursor-pointer" />
                 )}
               </div>
-            </div>
-          </div>
-
-          <div className="w-[247px] md:w-[49%] md:mb-[12px] p-[15px] relative border border-[#D3CBFB] rounded-lg">
-            <p className="text-[12px] text-[#797D8C]">Total Income</p>
-            <h3 className="font-[700] text-[19px]">
-              {eye ? <div>₦ 20,200.00</div> : <div>₦ *******</div>}
-            </h3>
-
-            <div className="w-[100%] flex items-center justify-between mt-[5px]">
-              <div className="flex items-center">
-                <div className="w-[19px] h-[19px] bg-[#FFD9D7] rounded-full flex justify-center items-center text-[13px] text-[#EA8F95]">
-                  <PiArrowDownLeftFill />
-                </div>
-                <p className="text-[13px] text-[#EA8F95] font-[500] ml-[5px]">
-                  +15%
-                </p>
-              </div>
-              <ScaleLoader color="#40196D" height={25} />
-            </div>
-
-            <div className="absolute right-[17px] top-[22px]">
-              {!eye ? (
-                <FaEyeSlash className="text-[20px] hover:cursor-pointer" />
-              ) : (
-                <FaEye className="text-[20px] hover:cursor-pointer" />
-              )}
-            </div>
-          </div>
-
-          <div className="w-[247px] md:w-[49%] md:mb-[12px] p-[15px] relative border border-[#D3CBFB] rounded-lg">
-            <p className="text-[12px] text-[#797D8C]">Total Income</p>
-            <h3 className="font-[700] text-[19px]">
-              {eye ? <div>₦ 20,200.00</div> : <div>₦ *******</div>}
-            </h3>
-            <div className="w-[100%] flex items-center justify-between mt-[5px]">
-              <div className="flex items-center">
-                <div className="w-[19px] h-[19px] bg-[#B5FFCE] rounded-full flex justify-center items-center text-[13px] text-[#43BE83]">
-                  <PiArrowUpRightFill />
-                </div>
-                <p className="text-[13px] text-[#43BE83] font-[500] ml-[5px]">
-                  +15%
-                </p>
-              </div>
-            </div>
-            <div className="absolute right-[17px] top-[22px]">
-              {!eye ? (
-                <FaEyeSlash className="text-[20px] hover:cursor-pointer" />
-              ) : (
-                <FaEye className="text-[20px] hover:cursor-pointer" />
-              )}
-            </div>
-          </div>
-
-          <div className="w-[247px] md:w-[49%] md:mb-[12px] p-[15px] relative border border-[#D3CBFB] rounded-lg">
-            <p className="text-[12px] text-[#797D8C]">Total Expense</p>
-            <h3 className="font-[700] text-[19px]">
-              {" "}
-              {eye ? <div>₦ 20,200.00</div> : <div>₦ *******</div>}
-            </h3>
-            <div className="w-[100%] flex items-center justify-between mt-[5px]">
-              <div className="flex items-center">
-                <div className="w-[19px] h-[19px] bg-[#B5FFCE] rounded-full flex justify-center items-center text-[13px] text-[#43BE83]">
-                  <PiArrowUpRightFill />
-                </div>
-                <p className="text-[13px] text-[#43BE83] font-[500] ml-[5px]">
-                  +10%
-                </p>
-              </div>
-              <ScaleLoader color="#40196D" height={25} />
-            </div>
-            <div className="absolute right-[17px] top-[18px]">
-              {!eye ? (
-                <FaEyeSlash className="text-[20px] hover:cursor-pointer" />
-              ) : (
-                <FaEye className="text-[20px] hover:cursor-pointer" />
-              )}
             </div>
           </div>
         </div>
@@ -335,8 +192,6 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="hidden md:flex sm:flex w-[100%] flex-col">
       </div>
     </>
   );

@@ -18,12 +18,12 @@ const AccountLayout = () => {
             </div>
             <div className={`${toggle1 ? "w-[200px]  " : "w-[0px]"} absolute`}><MobileDashboard /></div>
             <div>
-                <div className="w-full  justify-end max-lg:flex  hidden fixed top-3 right-3 "><img className="mr-3 w-[30px] h-[30px] rounded-full border"  alt="Pic"/>{!toggle1 ? <IoMenu className="text-2xl hover:cursor-pointer " onClick={() => {
-                    dispatch(mobiled())
-                }} /> : <IoClose className="text-2xl hover:cursor-pointer" onClick={() => {
-                    dispatch(changedMobile())
-                }} />}</div>
             </div>
+            <div className="w-full bg-white z-[400] h-[50px] items-center justify-end max-lg:flex  hidden fixed right-3 "><div className="mx-4 font-[Blud]">Imran Ichaku</div><img className="mr-3 w-[30px] h-[30px] rounded-full border" alt="Pic" />{!toggle1 ? <IoMenu className="text-2xl hover:cursor-pointer " onClick={() => {
+                dispatch(mobiled())
+            }} /> : <IoClose className="text-2xl hover:cursor-pointer" onClick={() => {
+                dispatch(changedMobile())
+            }} />}</div>
             <Outlet />
 
         </div>

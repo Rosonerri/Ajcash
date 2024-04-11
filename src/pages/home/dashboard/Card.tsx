@@ -1,9 +1,3 @@
-// import img6 from "../../../assets/bit.png";
-// import img7 from "../../../assets/bits.png";
-// import img8 from "../../../assets/bitss.png";
-// import img9 from "../../../assets/mar.png";
-// import img10 from "../../../assets/rec.png";
-// import img11 from "../../../assets/mask.png";
 import { PiArrowUpRightFill } from "react-icons/pi";
 
 const Card = () => {
@@ -17,9 +11,9 @@ const Card = () => {
                 boxShadow:
                     "0 10px 15px -3px rgba(69, 51, 201, 0.3), 0 4px 6px -2px rgba(69, 51, 201, 0.5)",
             }}
-            className="w-[100%] md:w-[42%] rounded-lg overflow-hidden relative"
+            className="w-[100%] rounded-lg overflow-hidden relative"
         >
-            <div className="w-[100%] h-[100%] p-[16px] bg-[#4f41bcde] flex flex-col">
+            <div className="w-full max-lg h-[100%] p-[16px] bg-[#4f41bcde] flex flex-col">
                 <p className="text-white text-[13px]">Danielle Francis</p>
                 <div className="w-[100%] flex items-center justify-between">
                     <h3 className="text-[23px] text-[#fff] font-[700]">**** **** **** 1234</h3>

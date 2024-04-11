@@ -46,9 +46,33 @@ import {
         c2: 8220,
         c3: 9710,
       },
+      {
+        name: "2021",
+        cl: 4480,
+        c2: 8220,
+        c3: 9710,
+      },
+      {
+        name: "2022",
+        cl: 4480,
+        c2: 9220,
+        c3: 1710,
+      },
+      {
+        name: "2023",
+        cl: 4480,
+        c2: 1220,
+        c3: 9710,
+      },
+      {
+        name: "2024",
+        cl: 5480,
+        c2: 8220,
+        c3: 9710,
+      },
     ];
     return (
-      <div className="w-[100%] md:w-[55%] border p-[15px] pl-[20px] pr-[20px] border-[#D3CBFB] rounded-lg flex flex-col">
+      <div className="w-[100%]  border p-[15px] pl-[20px] pr-[20px] border-[#D3CBFB] rounded-lg flex flex-col">
         <div className="w-[100%] flex justify-between">
           <h3 className="text-[14px] font-[600]">Claims Over the Years</h3>
   
