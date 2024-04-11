@@ -44,18 +44,18 @@ const Charts = () => {
   return (
     <div className="w-[100%] border p-[15px] pl-[20px] pr-[20px] border-[#D3CBFB] rounded-lg flex flex-col">
       <div className="w-[100%] flex justify-between">
-        <h3 className="text-[14px] font-[600]">Claims Over the Years</h3>
+        <h3 className="text-[14px] font-[600] max-md:text-[10px]">Claims Over the Years</h3>
 
         <div className="items-center flex">
           <div className="flex items-center">
             <div className="w-[10px] h-[10px] rounded-full bg-[#EA8F95]"></div>
-            <p className="text-[#EA8F95] text-[14px] font-[500] ml-[7px]">
+            <p className="text-[#EA8F95] max-md:text-[10px] text-[14px] font-[500] ml-[7px]">
               Approved
             </p>
           </div>
           <div className="flex items-center ml-[17px]">
-            <div className="w-[10px] h-[10px] rounded-full bg-[#5041BC]"></div>
-            <p className="text-[#5041BC] text-[14px] font-[500] ml-[7px]">
+            <div className="w-[10px]  h-[10px] rounded-full bg-[#5041BC]"></div>
+            <p className="text-[#5041BC]  max-md:text-[10px] text-[14px] font-[500] ml-[7px]">
               Submitted
             </p>
           </div>

@@ -67,13 +67,13 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="w-[350px] flex justify-center items-center">
+          <div className="w-[350px] max-md:w-[300px] flex justify-center items-center">
             <Card />
           </div>
         </div>
 
         <div className="flex items-center justify-between max-lg:flex-col mt-[5px] ">
-          <div className="w-[49%] max-lg:w-full  md:mb-[12px] p-[15px] relative border border-[#D3CBFB] rounded-lg">
+          <div className="w-[50%] max-lg:w-full  md:mb-[12px] p-[15px] relative border border-[#D3CBFB] rounded-lg">
             <p className="text-[15px] text-[#797D8C]">Total Balance</p>
             <h3 className="font-[700] text-[19px]">
               {eye ? <div>₦ 21,200.00</div> : <div>₦ *******</div>}
@@ -122,16 +122,16 @@ const Dashboard = () => {
           <div className="w-[100%] flex  items-center h-[40px] mt-[10px] border border-[#EBE8FF] rounded-lg justify-between mb-[10px]">
             <div className="flex items-center w-[205px]">
               <img src={""} alt="" className="h-[27px]" />
-              <p className="text-[#797D8C] text-[14px] ml-[22px]">
+              <p className="text-[#797D8C] max-md:text-[10px] text-[14px] ml-[22px]">
                 Nicholas Patrick
               </p>
             </div>
 
-            <p className="text-[14px] font-[700] w-[85px]"># 2540.58</p>
+            <p className="text-[14px] max-md:text-[10px] font-[700] w-[85px]"># 2540.58</p>
 
-            <p className="text-[14px] text-[#797D8C] w-[85px] max-md:hidden" >150 Products</p>
+            <p className="text-[14px] max-md:text-[10px] text-[#797D8C] w-[85px] max-md:hidden" >150 Products</p>
 
-            <p className="text-[14px] text-[#F7941D] w-[85px]">Credit</p>
+            <p className="text-[14px] max-md:text-[10px] text-[#F7941D] w-[85px]">Credit</p>
 
             <div className="text-primary cursor-pointer w-[85px] flex justify-end">
               <HiOutlineDotsVertical />
