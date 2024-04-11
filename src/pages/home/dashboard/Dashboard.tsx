@@ -119,7 +119,7 @@ const Dashboard = () => {
             </h4>
           </div>
 
-          <div className="w-[100%] flex  items-center h-[40px] mt-[10px] border border-[#EBE8FF] rounded-lg justify-between mb-[10px]">
+          <div className="w-[100%] flex items-center h-[40px] my-[10px] border border-[#EBE8FF] rounded-lg justify-between ">
             <div className="flex items-center w-[205px]">
               <img src={""} alt="" className="h-[27px]" />
               <p className="text-[#797D8C] max-md:text-[10px] text-[14px] ml-[22px]">
@@ -127,13 +127,13 @@ const Dashboard = () => {
               </p>
             </div>
 
-            <p className="text-[14px] max-md:text-[10px] font-[700] w-[85px]"># 2540.58</p>
+            <p className="text-[14px] max-md:text-[10px] font-[700]"># 2540.58</p>
 
-            <p className="text-[14px] max-md:text-[10px] text-[#797D8C] w-[85px] max-md:hidden" >150 Products</p>
+            <p className="text-[14px] max-md:text-[10px] text-[#797D8C]  max-md:hidden" >150 Products</p>
 
-            <p className="text-[14px] max-md:text-[10px] text-[#F7941D] w-[85px]">Credit</p>
+            <p className="text-[14px] max-md:text-[10px] text-[#F7941D] mx-3">Credit</p>
 
-            <div className="text-primary cursor-pointer w-[85px] flex justify-end">
+            <div className="text-primary cursor-pointer flex justify-end">
               <HiOutlineDotsVertical />
             </div>
           </div>

@@ -42,7 +42,7 @@ const Charts = () => {
     },
   ];
   return (
-    <div className="w-[100%] border p-[15px] pl-[20px] pr-[20px] border-[#D3CBFB] rounded-lg flex flex-col">
+    <div className="w-[100%] border px-3  border-[#D3CBFB] rounded-lg flex flex-col">
       <div className="w-[100%] flex justify-between">
         <h3 className="text-[14px] font-[600] max-md:text-[10px]">Claims Over the Years</h3>
 
