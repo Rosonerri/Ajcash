@@ -2,7 +2,6 @@ import { IoCopy } from "react-icons/io5";
 import image from "../../../../public/vite.svg";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { useState } from "react";
-import { GoSponsorTiers } from "react-icons/go";
 import OptionII from "./OptionII";
 import { FaAddressCard, FaQuestion } from "react-icons/fa";
 import { useSelector } from "react-redux";
