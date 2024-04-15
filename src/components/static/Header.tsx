@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <>
             {toggle && <Sider />}
-            <div className="w-full h-[60px] flex items-center justify-between z-[3]">
+            <div className="w-full h-[60px] flex items-center justify-between z-[3]" id="up">
                 <div className="w-full h-[60px] flex items-center justify-center fixed shadow-md bg-white z-[300]">
                     <div className="w-[95%] flex items-center justify-between">
                         <div className="flex items-center">
