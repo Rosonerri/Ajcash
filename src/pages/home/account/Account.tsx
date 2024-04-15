@@ -82,7 +82,7 @@ const Account = () => {
                           Copy account
                         </div>
                         <CopyToClipboard
-                          text="@francisuzoigwe"
+                          text=" 2049681053"
                           onCopy={handleCopy}
                         >
                           <button className="flex items-center text-[16px] text-[#40196D]">

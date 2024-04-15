@@ -1,21 +1,22 @@
-import { IoCaretDown } from "react-icons/io5"
 import { IoMdMenu } from "react-icons/io"
 import Sider from "../../pages/auth/landing/Sider"
 import { useDispatch, useSelector } from "react-redux"
 import { toggled } from "../../global/GlobalState"
 import { useNavigate } from "react-router-dom"
-
-
 const Header = () => {
+
     const headnavs: any = [
         {
             text: "Personal",
+            url: "personal"
         },
         {
             text: "Business",
+            url: "business"
         },
         {
             text: "Company",
+            url: "company"
         }
     ]
 
@@ -32,9 +33,16 @@ const Header = () => {
                             <div className="font-[Blud] text-[#40196D] hover:cursor-pointer" onClick={() => {
                                 navigate("/")
                             }}>Ajcash</div>
-                            <div className="ml-10 flex items-center max-md:hidden">
+                            <div className="ml-10 flex items-center max-md:hidden relative">
+
                                 {headnavs.map((props: any) => {
-                                    return (<div className="flex items-center mx-6 hover:cursor-pointer text-[#40196D]"><nav className="">{props.text}</nav> <div className="ml-1"><IoCaretDown /></div></div>)
+                                    return (
+                                        <div>
+                                            <div className="flex items-center mx-6 hover:cursor-pointer text-[#40196D]" onClick={() => {
+                                                navigate(`${props.url}`)
+                                            }}><nav className="">{props.text}</nav></div>
+                                        </div>
+                                    )
                                 })}
                             </div>
                         </div>

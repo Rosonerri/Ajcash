@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CiTimer } from "react-icons/ci";
+import { RiTimerFill } from "react-icons/ri";
 
 const Budget = () => {
   const motionVariant = {
@@ -30,7 +30,7 @@ const Budget = () => {
             Budgeting is coming soon
           </div>
           <div className="font-thin">We'll let you know when it's ready</div>
-          <div className="my-2"><CiTimer className="text-9xl text-[#40196D]"/></div>
+          <div className="my-2"><RiTimerFill className="text-9xl text-[#40196D]"/></div>
         </div>
       </motion.div>
     </div>

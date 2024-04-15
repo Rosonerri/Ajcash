@@ -30,7 +30,7 @@ const DashBoardSider = () => {
                         }} />}
                     </div>
                     <div className="my-5" />
-                    <div className="text-white font-[Blud]">Ajcash</div>
+                    <div className="text-white font-[Blud]" onClick={() => { navigate("/dashboard") }}>Ajcash</div>
                     <div className={`my-[10px] flex items-center  ${active === "/dashboard" ? "bg-white text-[#40196D]" : ""}  px-4 py-2 rounded-md transition-all duration-300 hover:cursor-pointer`} onClick={() => {
                         navigate("/dashboard")
                     }}> <div className="mr-2"><MdDashboardCustomize className="text-2xl" />
@@ -55,7 +55,7 @@ const DashBoardSider = () => {
                         navigate("/dashboard/account")
                     }}> <div className="mr-2"><RiAccountCircleFill className="text-2xl" />
                         </div>{toggle && <div>Account</div>}</div>
-                    <div className="my-[10px] flex items-center"> <div className="mr-2"><IoIosLogOut className="text-3xl" /></div>{toggle && <div>Logout</div>}</div>
+                    <div className="my-[10px] flex items-center hover:cursor-pointer"> <div className="mr-2"><IoIosLogOut className="text-3xl" /></div>{toggle && <div>Logout</div>}</div>
                     <div className="w-[80%] my-2 h-[100px] border bg-white rounded-md text-[#40196D] flex-col flex items-center justify-center hover:cursor-pointer" >
                         <div><GiArmorUpgrade className="text-2xl" /></div>
                         {toggle && <div className="">Upgrade Account</div>}

@@ -14,6 +14,10 @@ import Account from "../pages/home/account/Account"
 import Budget from "../pages/home/budget/Budget"
 import Card from "../pages/home/card/Card"
 import Security from "../pages/home/settings/Security"
+import Personal from "../pages/auth/landing/Personal"
+import Business from "../pages/auth/landing/Business"
+import Company from "../pages/auth/landing/Company"
+import Money from "../pages/home/settings/Money"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -23,6 +27,18 @@ export const mainRoute = createBrowserRouter([
             {
                 index: true,
                 element: <LandingScreen />
+            },
+            {
+                path: "/personal",
+                element: <Personal />
+            },
+            {
+                path: "/business",
+                element: <Business />
+            },
+            {
+                path: "/company",
+                element: <Company />
             }
         ]
     },
@@ -71,6 +87,10 @@ export const mainRoute = createBrowserRouter([
             {
                 path: "/dashboard/security",
                 element: <Security />
+            },
+            {
+                path: "/dashboard/send/money",
+                element: <Money />
             },
         ]
     }

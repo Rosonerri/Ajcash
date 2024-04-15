@@ -26,7 +26,7 @@ const Card = () => {
           <div className="text-[20px] font-[Blud] text-[#40196D]">Cards</div>
           <button className="text-[#40196D] hover:-translate-y-1 transition-all duration-300 border-[1px] rounded-lg px-7 py-3 bg-gray-100 border-[#40196D]">Get A Card</button>
         </div>
-        <div className="w-[60%] max-lg:w-[95%] border rounded-lg min-h-[450px] flex flex-col items-center">
+        <div className="w-[60%] max-lg:w-[95%] border rounded-lg min-h-[80%] mb-24 flex flex-col items-center">
           <div className="my-4" />
           <div className="relative">
             <div className="w-[200px] h-[300px] rounded-lg bg-[#40196D] "></div>

@@ -1,9 +1,11 @@
 import { IoMdClose } from "react-icons/io"
 import { changedToggle } from "../../../global/GlobalState"
 import { useDispatch } from "react-redux"
+import { useNavigate } from "react-router-dom"
 
 const Sider = () => {
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     return (
         <>
             <div className="w-full flex-col h-screen fixed   backdrop-blur-md z-[400] top-0 text-white items-center max-md:flex hidden ">
@@ -19,9 +21,15 @@ const Sider = () => {
                 </div>
                 <div className="text-black font-[Bruv] w-[95%] flex flex-col">
                     <div className="my-5">
-                        <button className="mr-5 px-5 text-white py-3 rounded-md bg-[#40196D] hover:bg-white hover:border-[#40196D] hover:border hover:text-[#40196D] transition-all duration-300">Login</button>
+                        <button className="mr-5 px-5 text-white py-3 rounded-md bg-[#40196D] hover:bg-white hover:border-[#40196D] hover:border hover:text-[#40196D] transition-all duration-300" onClick={() => {
+                            navigate("/auth")
+                            dispatch(changedToggle())
+                        }}>Login</button>
 
-                        <button className=" px-5 text-white hover:border py-3 rounded-md bg-[#40196D] hover:bg-white hover:border-[#40196D] border hover:text-[#40196D] transition-all duration-300">Signup</button>
+                        <button className=" px-5 text-white hover:border py-3 rounded-md bg-[#40196D] hover:bg-white hover:border-[#40196D] border hover:text-[#40196D] transition-all duration-300" onClick={() => {
+                            navigate("/auth/signup")
+                            dispatch(changedToggle())
+                        }}>Signup</button>
                     </div>
                 </div>
                 <div className="flex flex-col w-[95%] ">
