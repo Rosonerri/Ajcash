@@ -5,8 +5,9 @@ import { FaReceipt } from "react-icons/fa6"
 import { IoIosLogOut } from "react-icons/io"
 import { MdDashboardCustomize } from "react-icons/md"
 import { RiAccountCircleFill } from "react-icons/ri"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { useLocation, useNavigate } from "react-router-dom"
+import { changedMobile } from "../../../global/GlobalState"
 const MobileDashboard = () => {
 
   const variant = {
@@ -23,6 +24,7 @@ const MobileDashboard = () => {
   }
 
   const toggle = useSelector((state: any) => state.mobile)
+  const dispatch = useDispatch()
   const navigate = useNavigate()
   const location = useLocation()
   const active = location.pathname
@@ -31,26 +33,32 @@ const MobileDashboard = () => {
       <div className="my-6 font-[Blud] text-[20px]">Ajcash</div>
       <div className={`my-[10px] flex items-center  ${active === "/dashboard" ? "bg-[#40196D] text-white" : "text-[#40196D]"}  px-4 py-2 rounded-md transition-all duration-300 hover:cursor-pointer`} onClick={() => {
         navigate("/dashboard")
+        dispatch(changedMobile())
       }}> <div className="mr-2"><MdDashboardCustomize className="text-2xl" />
         </div>{toggle && <div>DashBoard</div>}</div>
       <div className={`my-[10px] flex items-center  ${active === "/dashboard/send" ? "bg-[#40196D] text-white" : "text-[#40196D]"}  px-4 py-2 rounded-md transition-all duration-300 hover:cursor-pointer`} onClick={() => {
         navigate("/dashboard/send")
+        dispatch(changedMobile())
       }}> <div className="mr-2"><BsFillSendFill className="text-2xl" />
         </div>{toggle && <div>Send Money</div>}</div>
       <div className={`my-[10px] flex items-center  ${active === "/dashboard/pay" ? "bg-[#40196D] text-white" : "text-[#40196D]"}  px-4 py-2 rounded-md transition-all duration-300 hover:cursor-pointer`} onClick={() => {
         navigate("/dashboard/pay")
+        dispatch(changedMobile())
       }}> <div className="mr-2"><FaReceipt className="text-2xl" />
         </div>{toggle && <div>Pay Money</div>}</div>
       <div className={`my-[10px] flex items-center  ${active === "/dashboard/card" ? "bg-[#40196D] text-white" : "text-[#40196D]"}  px-4 py-2 rounded-md transition-all duration-300 hover:cursor-pointer`} onClick={() => {
         navigate("/dashboard/card")
+        dispatch(changedMobile())
       }}> <div className="mr-2"><BsCreditCardFill className="text-2xl" />
         </div>{toggle && <div>Card</div>}</div>
       <div className={`my-[10px] flex items-center  ${active === "/dashboard/budget" ? "bg-[#40196D] text-white" : "text-[#40196D]"}  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`} onClick={() => {
         navigate("/dashboard/budget")
+        dispatch(changedMobile())
       }}> <div className="mr-2"><FaHistory className="text-2xl" />
         </div>{toggle && <div>Budget</div>}</div>
       <div className={`my-[10px] flex items-center  ${active === "/dashboard/account" ? "bg-[#40196D] text-white" : "text-[#40196D]"}  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`} onClick={() => {
         navigate("/dashboard/account")
+            dispatch(changedMobile())
       }}> <div className="mr-2"><RiAccountCircleFill className="text-2xl" />
         </div>{toggle && <div>Account</div>}</div>
       <div className="my-[10px] flex items-center"> <div className="mr-2"><IoIosLogOut className="text-3xl" /></div>{toggle && <div>Logout</div>}</div>

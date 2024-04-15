@@ -47,7 +47,7 @@ const Account = () => {
         <div className="my-3 max-lg:mt-[60px] text-[#40196D] font-bold text-[20px]">Account</div>
         <div className="w-[75%] max-md:w-[95%] border border-gray-100 flex flex-col items-center min-h-[80vh] rounded-lg ">
           <div className="w-full min-h-[150px]  flex items-center justify-center">
-            <div className="w-[95%] h-full flex items-center justify-between max-lg:flex-col">
+            <div className="w-full h-full flex items-center justify-between max-lg:flex-col">
               <div className="w-[40%] max-lg:w-full flex justify-between items-center  ">
                 <div className="flex items-center">
                   <img
@@ -119,7 +119,7 @@ const Account = () => {
             />
             <OptionII
               text="Security"
-              link="/auth/security"
+              link="/dashboard/security"
               icon={<AiOutlineSecurityScan />}
             />
             <OptionII

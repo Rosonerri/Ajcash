@@ -29,8 +29,8 @@ const Card = () => {
         <div className="w-[60%] max-lg:w-[95%] border rounded-lg min-h-[450px] flex flex-col items-center">
           <div className="my-4" />
           <div className="relative">
-            <div className="w-[200px] h-[300px] rounded-lg bg-gray-300 "></div>
-            <div className="w-[200px] h-[300px] rounded-lg bg-gray-700 z-[200] top-20 left-20 absolute  "></div>
+            <div className="w-[200px] h-[300px] rounded-lg bg-[#40196D] "></div>
+            <div className="w-[200px] h-[300px] rounded-lg bg-gray-300 z-[200] top-20 left-28 max-lg:left-20 absolute  "></div>
           </div>
           <div className="my-12 " />
           <div className="text-[15px] font-[Bruv] ">Spend online and offline with your Ajcash cards</div>

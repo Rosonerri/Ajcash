@@ -56,7 +56,7 @@ const Pay = () => {
 
       >
         <div className="font-[Blud] text-[20px] my-3 max-lg:my-10 text-[#40196D]">Pay</div>
-        <div className="w-[95%] border rounded-md h-[95%] pb-5 flex flex-col items-center">
+        <div className="w-full border rounded-md h-[95%] pb-5 flex flex-col items-center">
           <div className="my-4 " />
           <div
             className={`w-[90%] h-[50px] border overflow-hidden rounded-md ${scroll ? "sticky top-16 shadow-lg" : "relative"

@@ -13,6 +13,7 @@ import Send from "../pages/home/send/Send"
 import Account from "../pages/home/account/Account"
 import Budget from "../pages/home/budget/Budget"
 import Card from "../pages/home/card/Card"
+import Security from "../pages/home/settings/Security"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -66,6 +67,10 @@ export const mainRoute = createBrowserRouter([
             {
                 path: "/dashboard/card",
                 element: <Card />
+            },
+            {
+                path: "/dashboard/security",
+                element: <Security />
             },
         ]
     }
