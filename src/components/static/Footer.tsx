@@ -26,7 +26,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full mt-[40px] flex justify-center items-center flex-col bg-[#40196D] pt-[50px] pb-[20px] max-md:pb-[30px] max-md:pt-[20px] gap-[50px]">
+    <div className="w-full mt-[40px] flex justify-center items-center flex-col bg-[#40196D] pt-[50px] pb-[20px] max-md:pb-[30px] max-md:pt-[20px] gap-[50px]" id="down">
       <div
         className=" flex w-[90%]  justify-between flex-wrap max-md:gap-[35px]"
       >

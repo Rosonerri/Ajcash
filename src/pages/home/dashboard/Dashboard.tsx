@@ -17,7 +17,7 @@ const Dashboard = () => {
   };
   return (
     <motion.div variants={motionVariant} initial="close" animate="open" className="w-full min-h-[100vh] flex flex-col items-center">
- 
+      Hello World
     </motion.div>
   )
 }

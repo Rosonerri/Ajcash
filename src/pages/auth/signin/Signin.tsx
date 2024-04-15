@@ -57,7 +57,7 @@ const Signin = () => {
               className="w-[45%]  max-md:w-full h-full flex flex-col items-center rounded-md"
             >
               <div className="flex justify-between items-center w-full my-2">
-                <div className="font-bold">AJMoney</div>
+              <div className="font-[Blud] text-[20px] text-[#40196D] ">Ajcash</div>
                 <div className="flex items-center text-[#40196D] hover:cursor-pointer" onClick={() => {
                   navigate(-1)
                 }}> <div><MdOutlineChevronLeft className="text-2xl" /></div>Back</div>

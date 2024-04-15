@@ -14,9 +14,9 @@ import Account from "../pages/home/account/Account"
 import Budget from "../pages/home/budget/Budget"
 import Card from "../pages/home/card/Card"
 import Security from "../pages/home/settings/Security"
-import Personal from "../pages/auth/landing/Personal"
-import Business from "../pages/auth/landing/Business"
-import Company from "../pages/auth/landing/Company"
+import Personal from "../pages/auth/personal/Personal"
+import Business from "../pages/auth/business/Business"
+import Company from "../pages/auth/company/Company"
 import Money from "../pages/home/settings/Money"
 
 export const mainRoute = createBrowserRouter([

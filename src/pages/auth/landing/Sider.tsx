@@ -33,10 +33,22 @@ const Sider = () => {
                     </div>
                 </div>
                 <div className="flex flex-col w-[95%] ">
-                    <div className="font-[Blud]  my-4 hover:cursor-pointer text-black w-[100px]">Home</div>
-                    <div className="font-[Blud] my-4 hover:cursor-pointer text-black relative w-[100px]">Personal</div>
-                    <div className="font-[Blud] my-4 hover:cursor-pointer text-black w-[100px]">Business</div>
-                    <div className="font-[Blud] my-4 hover:cursor-pointer text-black w-[100px]">Company</div>
+                    <div className="font-[Blud]  my-4 hover:cursor-pointer text-black w-[100px]" onClick={() => {
+                        navigate("/")
+                        dispatch(changedToggle())
+                    }}>Home</div>
+                    <div className="font-[Blud] my-4 hover:cursor-pointer text-black relative w-[100px]" onClick={() => {
+                        navigate("/personal")
+                        dispatch(changedToggle())
+                    }}>Personal</div>
+                    <div className="font-[Blud] my-4 hover:cursor-pointer text-black w-[100px]" onClick={() => {
+                        navigate("/business")
+                        dispatch(changedToggle())
+                    }}>Business</div>
+                    <div className="font-[Blud] my-4 hover:cursor-pointer text-black w-[100px]" onClick={() => {
+                        navigate("/company")
+                        dispatch(changedToggle())
+                    }}>Company</div>
                 </div>
             </div>
         </>
