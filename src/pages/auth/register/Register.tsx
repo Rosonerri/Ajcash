@@ -52,7 +52,7 @@ const Register = () => {
     return (
         <>
             <div className="w-full min-h-[100vh] flex justify-center items-center bg-[#40196D]">
-                <div className="w-[90%] items-center flex justify-center h-[520px] rounded-xl bg-white text-black">
+                <div className="w-[90%] items-center flex justify-center min-h-[520px] rounded-xl bg-white text-black">
                     <div className="w-[90%] flex items-center justify-between h-full">
                         <form
                             onSubmit={onHandleSubmit}
@@ -64,7 +64,7 @@ const Register = () => {
                                     navigate(-1)
                                 }}> <div><MdOutlineChevronLeft className="text-2xl" /></div>Back</div>
                             </div>
-                            <div className="mt-8 text-[40px] font-[Blud] text-center">
+                            <div className="mt-5 text-[40px] font-[Blud] text-center">
                                 Create An Account
                             </div>
                             <div className=" text-gray-400 text-[13px]">
@@ -160,7 +160,7 @@ const Register = () => {
                             <div className="my-3 text-[15px] flex items-center">Already have an account ? <span className="ml-1 hover:cursor-pointer" onClick={() => {
                                 navigate("/auth")
                             }}>Login</span></div>
-                            <div className="w-full flex items-center justify-center h-[20px] text-[14px] hover:cursor-pointer">
+                            <div className="w-full flex items-center justify-center h-[20px] text-[14px] hover:cursor-pointer pb-4">
                                 Forgot Passcode? <div className="ml-2 ">Reset</div>
                             </div>
                         </form>

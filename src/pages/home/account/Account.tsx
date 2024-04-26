@@ -49,7 +49,7 @@ const Account = () => {
           <div className="w-full min-h-[150px]  flex items-center justify-center">
             <div className="w-full h-full flex items-center justify-between max-lg:flex-col">
               <div className="w-[40%] max-lg:w-full flex justify-between items-center  ">
-                <div className="flex items-center">
+                <div className="flex items-center ml-2">
                   <img
                     src={image}
                     alt="Profile"
@@ -98,7 +98,7 @@ const Account = () => {
                 <span className="mr-2">Level</span> I
                 </div>
               </div>
-              <div className="w-[45%] h-[110px] justify-center max-lg:w-full flex flex-col items-center max-lg:mt-3 bg-[#40196D] rounded-md">
+              <div className="w-[45%] mr-3 h-[110px] justify-center max-lg:w-full flex flex-col items-center max-lg:mt-3 bg-[#40196D] rounded-md">
                 <div className="text-white">Invite & Earn</div>
                 <div className="my-[2px]" />
                 <button className="bg-[green] px-4 py-2 rounded-[5px]  text-[12px] max-lg:w-[90%] text-white">
@@ -115,7 +115,7 @@ const Account = () => {
             <OptionII
               text="View Profile"
               icon={<FaAddressCard />}
-              link="/auth/view-profile"
+              link="/dashboard/view-profile"
             />
             <OptionII
               text="Security"
@@ -124,20 +124,20 @@ const Account = () => {
             />
             <OptionII
               text="Statement & Reports"
-              link="/auth/statement"
+              link="/dashboard/statement"
               icon={<TbMessageReport />}
             />
             <OptionII
               text="Legal"
-              link="/auth/legal"
+              link="/dashboard/legal"
               icon={<SiYoutubestudio />}
             />
             <OptionII
               text="Saved Cards"
-              link="/auth/cards"
+              link="/dashboard/card"
               icon={<PiCardsFill />}
             />
-            <OptionII text="FAQs" link="/auth/FAQs" icon={<FaQuestion />} />
+            <OptionII text="FAQs" link="/dashboard/FAQs" icon={<FaQuestion />} />
           </div>
           <div className="my-4" />
           <div

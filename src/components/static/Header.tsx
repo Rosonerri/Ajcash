@@ -30,9 +30,7 @@ const Header = () => {
                 <div className="w-full h-[60px] flex items-center justify-center fixed shadow-md bg-white z-[300]">
                     <div className="w-[95%] flex items-center justify-between">
                         <div className="flex items-center">
-                            <div className="font-[Blud] text-[#40196D] hover:cursor-pointer" onClick={() => {
-                                navigate("/")
-                            }}>Ajcash</div>
+                            <a className="font-[Blud] text-[#40196D] hover:cursor-pointer" href="/">Ajcash</a>
                             <div className="ml-10 flex items-center max-md:hidden relative">
 
                                 {headnavs.map((props: any) => {

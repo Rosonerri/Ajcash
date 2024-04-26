@@ -10,15 +10,15 @@ const Footer = () => {
   const buttonData = [
     {
       icon: <SiFacebook />,
-      url: "https://web.facebook.com/profile.php?id=61554003966869",
+      url: "https://web.facebook.com/FrancisUzoigwe.28",
     },
     {
       icon: <FaLinkedinIn />,
-      url: "https://web.facebook.com/profile.php?id=61554003966869",
+      url: "https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246",
     },
-    { icon: <FaXTwitter />, url: "https://twitter.com/shopwithfamous" },
+    { icon: <FaXTwitter />, url: "https://twitter.com/francisuzoigwe1" },
 
-    { icon: <FaSquareInstagram />, url: "https://twitter.com/shopwithfamous" },
+    { icon: <FaSquareInstagram />, url: "https://web.instagram.com/FrancisUzoigwe.28" },
   ];
 
   const handleClickURL = (url: string) => () => {
@@ -84,7 +84,7 @@ const Footer = () => {
             <div className="text-[16px] text-[#E41818]">
               <FaLocationDot />
             </div>
-            Lagos, Nigeria.
+            80, Bale Street, Boundary Ajeromi Road, Ajegunle Apapa, Lagos
           </nav>
           <nav className="text-[16px] font-[400] leading-[16px]  text-[white] flex items-center gap-[10px]">
             <div>
@@ -94,7 +94,7 @@ const Footer = () => {
                 draggable="false"
               />
             </div>
-            chyme@gmail.com
+            ajcashglobal@gmail.com
           </nav>
           <nav className="text-[16px] font-[400] leading-[16px]  text-[white] flex items-center gap-[10px]">
             <div>
@@ -104,7 +104,9 @@ const Footer = () => {
                 draggable="false"
               />
             </div>
-            (+234)-9135971419
+            +2348034278200
+            +2347047474886
+
           </nav>
         </div>
 
@@ -113,7 +115,7 @@ const Footer = () => {
             Our NewsLetter
           </text>
           <text className="text-[16px]  font-[400] leading-[20px] text-[white] ">
-            Be among the first to receive news about Chyme directly to your
+            Be among the first to receive news about Ajcash directly to your
             inbox.
           </text>
           <div>

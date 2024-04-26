@@ -18,6 +18,10 @@ import Personal from "../pages/auth/personal/Personal"
 import Business from "../pages/auth/business/Business"
 import Company from "../pages/auth/company/Company"
 import Money from "../pages/home/settings/Money"
+import Statement from "../pages/home/settings/Statement"
+import FAQs from "../pages/home/settings/FAQs"
+import SavedCards from "../pages/home/settings/SavedCards"
+import Legal from "../pages/home/settings/Legal"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -91,6 +95,26 @@ export const mainRoute = createBrowserRouter([
             {
                 path: "/dashboard/send/money",
                 element: <Money />
+            },
+            {
+                path: "/dashboard/view-profile",
+                element: <Money />
+            },
+            {
+                path: "/dashboard/statement",
+                element: <Statement />
+            },
+            {
+                path: "/dashboard/FAQs",
+                element: <FAQs />
+            },
+            {
+                path: "/dashboard/card",
+                element: <SavedCards />
+            },
+            {
+                path: "/dashboard/legal",
+                element: <Legal />
             },
         ]
     }
