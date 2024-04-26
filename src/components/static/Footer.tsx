@@ -104,8 +104,10 @@ const Footer = () => {
                 draggable="false"
               />
             </div>
-            +2348034278200
-            +2347047474886
+            <div>
+              <div className="hover:cursor-pointer">+2348034278200</div>
+              <div className="my-2 hover:cursor-pointer">+2347047474886</div>
+            </div>
 
           </nav>
         </div>
