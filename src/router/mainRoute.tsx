@@ -16,12 +16,12 @@ import Card from "../pages/home/card/Card"
 import Security from "../pages/home/settings/Security"
 import Personal from "../pages/auth/personal/Personal"
 import Business from "../pages/auth/business/Business"
-import Company from "../pages/auth/company/Company"
 import Money from "../pages/home/settings/Money"
 import Statement from "../pages/home/settings/Statement"
 import FAQs from "../pages/home/settings/FAQs"
 import SavedCards from "../pages/home/settings/SavedCards"
 import Legal from "../pages/home/settings/Legal"
+import Main from "../pages/auth/company/Main"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -42,7 +42,7 @@ export const mainRoute = createBrowserRouter([
             },
             {
                 path: "/company",
-                element: <Company />
+                element: <Main />
             }
         ]
     },
