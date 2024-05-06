@@ -8,15 +8,15 @@ const Header = () => {
     const headnavs: any = [
         {
             text: "Personal",
-            url: "personal"
+            url: "/personal",
         },
         {
             text: "Business",
-            url: "business"
+            url: "/business",
         },
         {
             text: "Company",
-            url: "company"
+            url: "/company",
         }
     ]
 
@@ -32,13 +32,10 @@ const Header = () => {
                         <div className="flex items-center">
                             <a className="font-[Blud] text-[#40196D] hover:cursor-pointer" href="/">Ajcash</a>
                             <div className="ml-10 flex items-center max-md:hidden relative">
-
                                 {headnavs.map((props: any) => {
                                     return (
                                         <div>
-                                            <div className="flex items-center mx-6 hover:cursor-pointer text-[#40196D]" onClick={() => {
-                                                navigate(`${props.url}`)
-                                            }}><nav className="">{props.text}</nav></div>
+                                            <a className="flex items-center mx-6 hover:cursor-pointer text-[#40196D]" href={props?.url} key={props?.id}><nav className="">{props.text}</nav></a>
                                         </div>
                                     )
                                 })}
