@@ -26,7 +26,7 @@ const Personal = () => {
   };
   return (
     <>
-      <div className="w-full h-auto flex flex-col items-center">
+      <div className="w-full h-auto flex flex-col items-center" >
         <motion.div variants={motionVariant} initial="close" animate="open" className="flex w-[95%] items-center justify-between">
           <div className="w-[450px] max-md:w-full max-md:mt-10 mt-7">
             <div className="font-[Blud] max-md:text-center text-[#40196D] text-[45px] leading-[50px] mb-3">Send money for free anytime.</div>
