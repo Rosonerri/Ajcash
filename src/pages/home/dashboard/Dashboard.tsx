@@ -44,7 +44,8 @@ const Dashboard = () => {
   return (
     <motion.div variants={motionVariant} initial="close" animate="open" className="w-full min-h-[100vh] flex flex-col items-center ">
       <div className="w-[97%] flex flex-col items-center min-h-[100vh] ">
-        <div className="w-full flex  items-center my-2">Welcome back <b className="ml-1"> Francis</b></div>
+        <hr className="w-full my-5"/>
+        <div className="w-full flex  items-center my-2 max-md:hidden">Welcome back <b className="ml-1"> Francis</b></div>
         <hr className="text-[#40196D] w-full my-2" />
         <div className="w-full grid grid-cols-3 gap-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
           <div className="h-[200px] min-w-[200px] border rounded-lg max-md:mt-2"></div>
@@ -64,12 +65,13 @@ const Dashboard = () => {
             }}>
             <div className="w-[50px] h-[50px] rounded-full hover:bg-white hover:text-[#40196D] transition-all duration-300 border-[#40196D] border hover:cursor-pointer flex items-center justify-center bg-[#40196D] text-white"><BsFillSendFill className="text-base" /></div>
             <div className="mt-1">Pay Bills</div>
+            
           </div>
           <div className="flex flex-col items-center mx-3 my-2" onClick={() => {
-              navigate("/dashboard/account")
+              navigate("/dashboard/pay/internet")
             }}>
             <div className="w-[50px] h-[50px] rounded-full hover:bg-white hover:text-[#40196D] transition-all duration-300 border-[#40196D] border hover:cursor-pointer flex items-center justify-center bg-[#40196D] text-white"><BsFillSendFill className="text-base" /></div>
-            <div className="mt-1">Send</div>
+            <div className="mt-1">Internet</div>
           </div>
         </div>
         <div className="w-full flex justify-between max-lg:flex-col">
