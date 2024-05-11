@@ -4,7 +4,8 @@ const initialState = {
     user: {} || null,
     toggle: false,
     bar: false,
-    mobile: false
+    mobile: false,
+    update: false
 
 }
 
@@ -35,7 +36,8 @@ const GlobalState = createSlice({
         },
         changedMobile: (state: any) => {
             state.mobile = false
-        }
+        },
+
 
     }
 });

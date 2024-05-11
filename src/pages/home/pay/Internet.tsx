@@ -7,7 +7,7 @@ const Internet = () => {
         <>
             <div className="w-full h-screen flex items-center flex-col">
                 <div className="max-lg:mt-28 mt-16 mb-3  font-[Blud] text-[25px] text-[#40196D]">Pay</div>
-                <div className="w-[60%] max-md:w-[95%] min-h-[450px] border rounded-lg shadow-lg">
+                <div className="w-[60%] max-md:w-[95%] min-h-[400px] border rounded-lg shadow-lg">
                     <div className="w-full h-[30px] flex items-center">
                         <div className="ml-5 mt-5 flex hover:cursor-pointer hover:underline items-center" onClick={() => {
                             navigate(-1)
@@ -18,27 +18,6 @@ const Internet = () => {
                     </div>
                     <div className="w-full flex flex-col items-center">
                         <div className="font-[Blud] text-[20px]">Internet</div>
-                        {/* <div className="w-[70%] max-md:w-[90%]">
-                            <div className="w-full h-[45px]">
-                                <label htmlFor="UserEmail" className="block text-[14px] font-[Blud]  text-gray-700"> Amount </label>
-                                <input
-                                    type="number"
-                                    placeholder="How Much? "
-                                    className="mt-1 h-full w-full rounded-md border-gray-200 shadow-sm sm:text-sm pl-3 outline-none border"
-                                />
-                            </div>
-                        </div>
-                        <div className="w-[70%] max-md:w-[90%] mt-10">
-                            <div className="w-full h-[45px]">
-                                <label htmlFor="UserEmail" className="block text-[14px] font-[Blud]  text-gray-700"> Phone Number </label>
-                                <input
-                                    type="number"
-                                    id="UserEmail"
-                                    placeholder="What Phone Number"
-                                    className="mt-1 h-full w-full rounded-md border-gray-200 shadow-sm sm:text-sm pl-3 outline-none border"
-                                />
-                            </div>
-                        </div> */}
                         <div className="w-[70%] max-md:w-[90%] mt-3">
                             <div className="w-full h-[45px]">
                                 <label htmlFor="UserEmail" className="block text-[14px] font-[Blud]  text-gray-700"> Choose Provider</label>
