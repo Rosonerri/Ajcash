@@ -20,10 +20,17 @@ import FAQs from "../pages/home/settings/FAQs";
 import SavedCards from "../pages/home/settings/SavedCards";
 import Legal from "../pages/home/settings/Legal";
 import Main from "../pages/auth/company/Main";
+import Errorpage from "../pages/error/Errorpage";
+import Airtime from "../pages/home/pay/Airtime";
+import Internet from "../pages/home/pay/Internet";
 import EditProfile from "../pages/home/profile/EditProfile";
 import ViewProfile from "../pages/home/profile/ViewProfile";
 
 export const mainRoute = createBrowserRouter([
+  {
+    path: "*",
+    element: <Errorpage />,
+  },
   {
     path: "/",
     element: <AuthenticationLayout />,
@@ -71,6 +78,14 @@ export const mainRoute = createBrowserRouter([
       {
         path: "/dashboard/pay",
         element: <Pay />,
+      },
+      {
+        path: "/dashboard/pay/airtime",
+        element: <Airtime />,
+      },
+      {
+        path: "/dashboard/pay/internet",
+        element: <Internet />,
       },
       {
         path: "/dashboard/send",

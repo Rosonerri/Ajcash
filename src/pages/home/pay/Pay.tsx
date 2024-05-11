@@ -1,4 +1,3 @@
-
 import Options from "./Options";
 import { motion } from "framer-motion";
 import { IoSearchOutline } from "react-icons/io5";
@@ -55,62 +54,62 @@ const Pay = () => {
   const Words: PaymentOption[] = [
     {
       option: "Airtime",
-      url: "/airtime",
+      url: "/dashboard/pay/airtime",
       icon: <FaCcMastercard />
     },
     {
       option: "Internet",
-      url: "/internet",
+      url: "/dashboard/pay/internet",
       icon: <MdOutlineWifi />
     },
     {
       option: "TV",
-      url: "/tv",
+      url: "/dashboard/pay/tv",
       icon: <PiTelevisionSimpleLight />
     },
     {
       option: "Electricity",
-      url: "/electricity",
+      url: "/dashboard/pay/electricity",
       icon: <FaLightbulb />
     },
     {
       option: "Solar",
-      url: "/solar",
+      url: "/dashboard/pay/solar",
       icon: <GrSolaris />
     },
     {
       option: "Betting",
-      url: "/betting",
+      url: "/dashboard/pay/betting",
       icon: <GiCardAceDiamonds />
     },
     {
       option: "GiftCards",
-      url: "/giftcards",
+      url: "/dashboard/pay/giftcards",
       icon: <TbGiftCardFilled />
     },
     {
       option: "Transportation",
-      url: "/transportation",
+      url: "/dashboard/pay/transportation",
       icon: <MdEmojiTransportation />
     },
     {
       option: "Education",
-      url: "/education",
+      url: "/dashboard/pay/education",
       icon: <FaUserGraduate />
     },
     {
       option: "Pay With Bank",
-      url: "/paywithussd",
+      url: "/dashboard/pay/paywithussd",
       icon: <CiBank />
     },
     {
       option: "POS Terminal",
-      url: "/posterminal",
+      url: "/dashboard/pay/posterminal",
       icon: <VscTerminalBash />
     },
     {
       option: "ATM Withdrawal",
-      url: "/witdrawal",
+      url: "/dashboard/pay/witdrawal",
       icon: <BiMoneyWithdraw />
     },
     {
@@ -123,7 +122,6 @@ const Pay = () => {
 
   ];
 
-  console.log("this is data:", Words);
 
   window.addEventListener("scroll", () => {
     if (window.scrollY >= 50) {

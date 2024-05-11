@@ -29,9 +29,17 @@
   font-family: Blud;
 }
 
+@font-face {
+  font-family: Zah;
+  src: url(/font/Zaptron-Regular.otf);
+}
+
+.Zah {
+  font-family: Zah;
+}
+
 :root {
-  font-family: Poppin, Bruv, Blud;
+  font-family: Poppin, Bruv, Blud, Zah;
   line-height: 1.5;
   font-weight: 400;
 }
-
