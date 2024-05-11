@@ -65,7 +65,6 @@ const Dashboard = () => {
             }}>
             <div className="w-[50px] h-[50px] rounded-full hover:bg-white hover:text-[#40196D] transition-all duration-300 border-[#40196D] border hover:cursor-pointer flex items-center justify-center bg-[#40196D] text-white"><BsFillSendFill className="text-base" /></div>
             <div className="mt-1">Pay Bills</div>
-            
           </div>
           <div className="flex flex-col items-center mx-3 my-2" onClick={() => {
               navigate("/dashboard/pay/internet")
