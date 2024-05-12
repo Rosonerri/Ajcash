@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import vite from "../../../assets/undraw_projections_re_ulc6.svg"
+import vite from "../../../assets/woman.jpg"
 const FirstSection = () => {
 
   const navigate = useNavigate()
@@ -21,7 +21,7 @@ const FirstSection = () => {
             </div>
           </div>
           <div className="w-[45%] h-[500px] max-md:hidden flex items-center justify-between">
-            <img className="w-full h-[400px]  object-cover" src={vite} />
+            <img className="w-full h-[400px] rounded-lg  object-cover" src={vite} loading="lazy"/>
           </div>
         </div>
         <div className="flex w-full flex-col items-center h-auto max-md:mt-7">
