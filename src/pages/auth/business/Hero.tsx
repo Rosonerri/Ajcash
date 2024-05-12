@@ -6,7 +6,7 @@ const Hero = () => {
       className={`w-full h-screen bg-background relative bg-center bg-cover bg-fixed`}
     >
       <div className="absolute w-full h-full bg-[#000000c6] flex justify-center items-center space-y-4 flex-col text-white">
-        <div className="text-[20px] md:text-[30px]">Welcome to AjCash</div>
+        <div className="text-[20px] md:text-[30px]">Welcome to Ajcash</div>
         <div className="text-[35px] text-center md:text-[70px] uppercase">
           We are <span className="text-violet-500 font-extrabold">fintech</span>{" "}
           solution
