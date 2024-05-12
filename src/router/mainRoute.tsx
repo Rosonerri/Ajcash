@@ -25,6 +25,9 @@ import Airtime from "../pages/home/pay/Airtime";
 import Internet from "../pages/home/pay/Internet";
 import EditProfile from "../pages/home/profile/EditProfile";
 import ViewProfile from "../pages/home/profile/ViewProfile";
+import Betting from "../pages/home/pay/Education";
+import Education from "../pages/home/pay/Education";
+import Gaming from "../pages/home/pay/Gaming";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -86,6 +89,14 @@ export const mainRoute = createBrowserRouter([
       {
         path: "/dashboard/pay/internet",
         element: <Internet />,
+      },
+      {
+        path: "/dashboard/pay/education",
+        element: <Education />,
+      },
+      {
+        path: "/dashboard/pay/gaming",
+        element: <Gaming />,
       },
       {
         path: "/dashboard/send",
