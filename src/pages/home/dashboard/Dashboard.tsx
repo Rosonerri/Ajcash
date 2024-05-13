@@ -1,6 +1,9 @@
 import { motion } from "framer-motion"
 import { BsFillSendFill } from "react-icons/bs"
 import { useNavigate } from "react-router-dom";
+import Charts from "./Charts";
+import { FaReceipt } from "react-icons/fa6";
+import { MdOutlineWifi } from "react-icons/md";
 
 const Dashboard = () => {
 
@@ -44,8 +47,8 @@ const Dashboard = () => {
   return (
     <motion.div variants={motionVariant} initial="close" animate="open" className="w-full min-h-[100vh] flex flex-col items-center ">
       <div className="w-[97%] flex flex-col items-center min-h-[100vh] ">
-        <hr className="w-full my-5"/>
-        <div className="w-full flex  items-center my-2 max-md:hidden">Welcome back <b className="ml-1"> Francis</b></div>
+        {/* <hr className="w-full my-5"/>  */}
+        <div className="w-full flex  items-center my-2 max-md:hidden">Welcome back <b className="ml-2"> Francis Uzoigwe</b></div>
         <hr className="text-[#40196D] w-full my-2" />
         <div className="w-full grid grid-cols-3 gap-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
           <div className="h-[200px] min-w-[200px] border rounded-lg max-md:mt-2"></div>
@@ -53,23 +56,23 @@ const Dashboard = () => {
           <div className="h-[200px] min-w-[200px] border rounded-lg max-md:hidden"></div>
         </div>
         <hr className="w-full mt-5" />
-        <div className="max-lg:flex items-center hidden ">
+        <div className="flex items-center md:center  w-full ">
           <div className="flex flex-col items-center mx-3 my-2 " onClick={() => {
-              navigate("/dashboard/send")
-            }}>
-            <div className="w-[50px] h-[50px] rounded-full hover:bg-white hover:text-[#40196D] transition-all duration-300 border-[#40196D] border hover:cursor-pointer flex items-center justify-center bg-[#40196D] text-white"><BsFillSendFill className="text-base" /></div>
+            navigate("/dashboard/send")
+          }}>
+            <div className="w-[50px] h-[50px] rounded-xl hover:bg-white hover:text-[#40196D] transition-all duration-300 border-[#40196D] border hover:cursor-pointer flex items-center justify-center bg-[#40196D] text-white"><BsFillSendFill className="text-base" /></div>
             <div className="mt-1" >Send</div>
           </div>
           <div className="flex flex-col items-center mx-3 my-2" onClick={() => {
-              navigate("/dashboard/pay")
-            }}>
-            <div className="w-[50px] h-[50px] rounded-full hover:bg-white hover:text-[#40196D] transition-all duration-300 border-[#40196D] border hover:cursor-pointer flex items-center justify-center bg-[#40196D] text-white"><BsFillSendFill className="text-base" /></div>
+            navigate("/dashboard/pay")
+          }}>
+            <div className="w-[50px] h-[50px] rounded-xl hover:bg-white hover:text-[#40196D] transition-all duration-300 border-[#40196D] border hover:cursor-pointer flex items-center justify-center bg-[#40196D] text-white"><FaReceipt className="text-base" /></div>
             <div className="mt-1">Pay Bills</div>
           </div>
           <div className="flex flex-col items-center mx-3 my-2" onClick={() => {
-              navigate("/dashboard/pay/internet")
-            }}>
-            <div className="w-[50px] h-[50px] rounded-full hover:bg-white hover:text-[#40196D] transition-all duration-300 border-[#40196D] border hover:cursor-pointer flex items-center justify-center bg-[#40196D] text-white"><BsFillSendFill className="text-base" /></div>
+            navigate("/dashboard/pay/internet")
+          }}>
+            <div className="w-[50px] h-[50px] rounded-xl hover:bg-white hover:text-[#40196D] transition-all duration-300 border-[#40196D] border hover:cursor-pointer flex items-center justify-center bg-[#40196D] text-white"><MdOutlineWifi className="text-base" /></div>
             <div className="mt-1">Internet</div>
           </div>
         </div>
@@ -94,7 +97,9 @@ const Dashboard = () => {
                 </div>
                 <div className="w-full max-lg:hidden">
                   <div className="mt-4 font-[Blud]">Statistics</div>
-                  <div className="h-[300px] rounded-xl w-full border mb-3"></div>
+                  <div className="h-[300px] rounded-xl w-full border mb-3">
+                    <Charts />
+                  </div>
                 </div>
               </div>
             </div>

@@ -42,11 +42,11 @@ const Charts = () => {
     },
   ];
   return (
-    <div className="w-[100%] border px-3  border-[#D3CBFB] rounded-lg flex flex-col">
+    <div className="w-[100%] border px-3  border-[#D3CBFB] rounded-lg flex flex-col h-full">
       <div className="w-[100%] flex justify-between">
         <h3 className="text-[14px] font-[600] max-md:text-[10px]">Claims Over the Years</h3>
 
-        <div className="items-center flex">
+        <div className="items-center flex mt-5">
           <div className="flex items-center">
             <div className="w-[10px] h-[10px] rounded-full bg-[#EA8F95]"></div>
             <p className="text-[#EA8F95] max-md:text-[10px] text-[14px] font-[500] ml-[7px]">
@@ -62,7 +62,7 @@ const Charts = () => {
         </div>
       </div>
 
-      <ResponsiveContainer width="100%" height={170}>
+      <ResponsiveContainer width="100%" height={250}>
         <LineChart
           className="ml-[-40px]"
           data={data}

@@ -17,7 +17,7 @@ const AccountLayout = () => {
             <div className={`${toggle1 ? "w-[200px]  " : "w-[0px]"} absolute`}><MobileDashboard /></div>
             <div>
             </div>
-            <div className="w-full bg-white shadow-sm z-[400] h-[50px] items-center justify-end max-lg:flex  hidden fixed  "><div className="mx-4 font-[Blud]">Imran Ichaku</div><img className="mr-3 w-[30px] h-[30px] rounded-full border" alt="Pic" />{!toggle1 ? <IoMenu className="text-2xl mr-3 hover:cursor-pointer " onClick={() => {
+            <div className="w-full bg-white shadow-sm z-[400] h-[50px] items-center justify-end max-lg:flex  hidden fixed  "><div className="mx-4 font-[Blud]">Francis Uzoigwe</div><img className="mr-3 w-[30px] h-[30px] rounded-full border" alt="Pic" />{!toggle1 ? <IoMenu className="text-2xl mr-3 hover:cursor-pointer " onClick={() => {
                 dispatch(mobiled())
             }} /> : <IoClose className="text-2xl hover:cursor-pointer mr-3" onClick={() => {
                 dispatch(changedMobile())

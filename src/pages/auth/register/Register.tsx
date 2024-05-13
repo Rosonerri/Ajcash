@@ -164,12 +164,12 @@ const Register = () => {
                                 Forgot Passcode? <div className="ml-2 ">Reset</div>
                             </div>
                         </form>
-                        <div className="max-md:hidden w-[50%] border h-[85%] rounded-2xl overflow-hidden">
+                        <div className="max-md:hidden w-[50%] border h-[450px] rounded-2xl ">
                             <img
                                 src={student}
                                 alt=""
                                 loading="lazy"
-                                className="object-cover w-full h-full "
+                                className="object-cover  w-full h-full "
                             />
                         </div>
                     </div>

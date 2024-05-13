@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import vite from "../../../assets/react.svg"
+import vite from "../../../assets/pos.jpg"
 import { motion } from "framer-motion"
 import Dialogues from "./Dialogues"
 import { BsCreditCardFill, BsFillSendFill } from "react-icons/bs"

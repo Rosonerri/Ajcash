@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { motion } from "framer-motion"
 const Main = () => {
   const [whatis, setWhatIs] = useState<boolean>(true)
   const [ajcash, setAjcash] = useState<boolean>(false)
@@ -125,11 +125,23 @@ const Main = () => {
     )
   }
 
-
+  const motionVariant = {
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.7,
+      },
+    },
+    close: {
+      opacity: 0,
+      y: "100px",
+    },
+  };
 
   return (
     <>
-      <div className="w-full min-h-[50vh] flex flex-col items-center relative">
+      <motion.div variants={motionVariant} initial="close" animate="open" className="w-full min-h-[50vh] flex flex-col items-center relative">
         <div className="w-[95%] border rounded-md min-h-[550px] my-2 flex items-center justify-center ">
           General Team Memberes Image would go here
         </div>
@@ -146,7 +158,7 @@ const Main = () => {
           </div>
           <div className="max-md:w-full w-full min-h-[50vh]">{whatis && <Whatis /> || ajcash && <Ajcash /> || benefit && <Who /> || where && <Where /> || access && <Mobile /> || support && <Support />}</div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
