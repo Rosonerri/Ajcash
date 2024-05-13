@@ -5,7 +5,7 @@ import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
 import { GrSolaris } from "react-icons/gr";
 import { MdEmojiTransportation, MdOutlineWifi } from "react-icons/md";
-import { FaCcMastercard, FaLightbulb, FaUserGraduate } from "react-icons/fa6";
+import { FaAngleLeft, FaCcMastercard, FaLightbulb, FaUserGraduate } from "react-icons/fa6";
 import { PiTelevisionSimpleLight } from "react-icons/pi";
 import { GiCardAceDiamonds } from "react-icons/gi";
 import { TbGiftCardFilled } from "react-icons/tb";
@@ -13,6 +13,8 @@ import { BiGame, BiMoneyWithdraw } from "react-icons/bi";
 import { CiBank } from "react-icons/ci";
 import { VscTerminalBash } from "react-icons/vsc";
 import { SiGooglemybusiness } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
+
 
 const Pay = () => {
   const motionVariant = {
@@ -128,6 +130,7 @@ const Pay = () => {
       setScroll(false);
     }
   });
+  const navigate = useNavigate()
 
   return (
     <div className="w-full min-h-[100vh]">
@@ -141,11 +144,18 @@ const Pay = () => {
           Pay
         </div>
         <div className="w-full border rounded-md h-[95%] pb-5 flex flex-col items-center">
+          <div className="my-3 w-full ml-3 flex justify-start">
+            <div className="flex items-center  hover:cursor-pointer " onClick={() => {
+              navigate(-1)
+            }}>
+              <div className="ml-2"><FaAngleLeft /></div>
+              <div className="ml-1">Back</div>
+            </div>
+          </div>
           <div className="my-4" />
           <div
-            className={`w-[90%] h-[50px] border overflow-hidden rounded-md ${
-              scroll ? "sticky top-16 shadow-lg" : "relative"
-            }`}
+            className={`w-[90%] h-[50px] border overflow-hidden rounded-md ${scroll ? "sticky top-16 shadow-lg" : "relative"
+              }`}
           >
             <div className="absolute left-2 top-[18px]">
               <IoSearchOutline className="text-gray-400" />
