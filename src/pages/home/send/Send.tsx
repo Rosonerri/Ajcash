@@ -22,7 +22,7 @@ const Send = () => {
   return (
     <>
       <motion.div variants={motionVariant} initial="close" animate="open" className="w-full min-h-[100vh] flex-col items-center flex text-black">
-        <div className="text-[20px] font-[Blud] text-[#40196D] max-lg:my-12 my-5">Send</div>
+        <div className="text-[20px] font-[Blud] text-[#40196D]  my-3">Send</div>
         <div className="w-[60%] max-lg:w-[95%] min-h-[220px] shadow-lg border rounded-lg flex flex-col items-center">
           <div className="my-3" />
           <div className="w-[90%] shadow-lg rounded-lg border  py-3 flex items-center justify-between px-5">
@@ -46,7 +46,7 @@ const Send = () => {
             <div><MdOutlineChevronRight className="text-2xl" /></div>
           </div>
         </div>
-        <div className="w-[60%] flex flex-col items-center max-lg:w-[90%] h-[300px] rounded-lg border shadow-md my-5">
+        <div className="w-[60%] flex flex-col items-center max-lg:w-[90%] mb-10 h-[300px] rounded-lg border shadow-md my-5">
           <div className="w-[85%] flex items-center mt-6 font-[Blud]">Recents</div>
           <div className=" my-5 flex flex-col items-center">
             <div className="w-[70px] h-[70px] rounded-full border my-3 flex items-center justify-center">

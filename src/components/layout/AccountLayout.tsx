@@ -1,27 +1,40 @@
-import { Outlet } from "react-router-dom"
+import { Link, Outlet, useLocation } from "react-router-dom"
 import DashBoardSider from "../../pages/home/dashboard/DashBoardSider"
-import MobileDashboard from "../../pages/home/dashboard/MobileDashboard"
-import { useDispatch, useSelector } from "react-redux"
-import { changedMobile, mobiled } from "../../global/GlobalState"
-import { IoClose, IoMenu } from "react-icons/io5"
-
+import { useSelector } from "react-redux"
+import { IoHome } from "react-icons/io5"
+import { RiAccountPinCircleFill } from "react-icons/ri"
+import { BsCreditCard2FrontFill, BsFillSendFill } from "react-icons/bs"
+import { FaReceipt } from "react-icons/fa6"
 const AccountLayout = () => {
     const toggle = useSelector((state: any) => state.bar)
-    const toggle1 = useSelector((state: any) => state.mobile)
-    const dispatch = useDispatch()
+    const location = useLocation()
+    const active = location.pathname
+
     return (
         <div className="flex justify-between">
+            <div className="fixed bottom-0 hidden max-lg:flex z-[500] w-full bg-[#40196D] text-[#40196D] h-[60px] items-center justify-center ">
+                <div className="w-[80%] flex items-center justify-between">
+                    <Link to="/dashboard/send">
+                        <div className={`px-3 py-3 rounded-full flex items-center justify-center transition-all duration-300 ${active === "/dashboard/send" ? "bg-white text-[#40196D] -translate-y-[6px]" : "text-white"}`}><BsFillSendFill className="text-[20px]" /></div>
+                    </Link>
+                    <Link to="/dashboard/pay">
+                        <div className={`px-3 py-3 rounded-full transition-all duration-300 flex items-center justify-center ${active === "/dashboard/pay" ? "bg-white text-[#40196D] -translate-y-[6px]" : "text-white"}`}><FaReceipt className="text-[20px]" /></div>
+                    </Link>
+                    <Link to="/dashboard">
+                        <div className={`px-3 py-3 rounded-full transition-all duration-300 flex items-center justify-center  ${active === "/dashboard" ? "bg-white px-3 py-33 text-[#40196D] -translate-y-[6px]" : "text-white"} `}><IoHome className="text-[20px]" /></div>
+                    </Link>
+                    <Link to="/dashboard/card">
+                        <div className={`px-3 py-3 rounded-full transition-all duration-300 flex items-center justify-center  ${active === "/dashboard/card" ? "bg-white text-[#40196D] -translate-y-[6px]" : "text-white"} `}><BsCreditCard2FrontFill className="text-[20px]" /></div></Link>
+                    <Link to="/dashboard/account">
+                        <div className={`px-3 py-3 rounded-full transition-all duration-300 flex items-center justify-center ${active === "/dashboard/account" ? "bg-white text-[#40196D] -translate-y-[6px] px-3 py-33" : "text-white"}  `}><RiAccountPinCircleFill className="text-[20px]" /></div>
+                    </Link>
+                </div>
+            </div>
             <div className={`${toggle ? "w-[200px] " : "w-[100px]"} max-lg:hidden bg-[#40196D] text-white`}>
                 <DashBoardSider />
             </div>
-            <div className={`${toggle1 ? "w-[200px]  " : "w-[0px]"} absolute`}><MobileDashboard /></div>
             <div>
             </div>
-            <div className="w-full bg-white shadow-sm z-[400] h-[50px] items-center justify-end max-lg:flex  hidden fixed  "><div className="mx-4 font-[Blud]">Francis Uzoigwe</div><img className="mr-3 w-[30px] h-[30px] rounded-full border" alt="Pic" />{!toggle1 ? <IoMenu className="text-2xl mr-3 hover:cursor-pointer " onClick={() => {
-                dispatch(mobiled())
-            }} /> : <IoClose className="text-2xl hover:cursor-pointer mr-3" onClick={() => {
-                dispatch(changedMobile())
-            }} />}</div>
             <Outlet />
         </div>
     )

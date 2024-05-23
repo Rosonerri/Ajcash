@@ -21,7 +21,7 @@ const Card = () => {
   return (
     <>
       <motion.div variants={motionVariant} initial="close" animate="open" className="w-full min-h-[100vh] flex flex-col items-center text-black">
-        <div className="my-3 max-lg:my-10" />
+        <div className="my-3 " />
         <div className="w-[60%] max-lg:w-[95%] flex items-center justify-between my-3">
           <div className="text-[20px] font-[Blud] text-[#40196D]">Cards</div>
           <button className="text-[#40196D] hover:-translate-y-1 transition-all duration-300 border-[1px] rounded-lg px-7 py-3 bg-gray-100 border-[#40196D]">Get A Card</button>
