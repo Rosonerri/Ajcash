@@ -140,7 +140,7 @@ const Pay = () => {
         animate="open"
         className={`p-[20px] w-full flex flex-col items-center`}
       >
-        <div className="font-[Blud] text-[20px] my-3 max-lg:my-10 text-[#40196D]">
+        <div className="font-[Blud] text-[20px] my-3  text-[#40196D]">
           Pay
         </div>
         <div className="w-full border rounded-md h-[95%] pb-5 flex flex-col items-center">

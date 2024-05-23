@@ -44,7 +44,7 @@ const Account = () => {
         className={`w-full min-h-[100vh] flex flex-col items-center  ${toggle ? "bg-[#d8d8d8]" : "bg-[#FFFFFF]"
           }`}
       >
-        <div className="my-3 max-lg:mt-[60px] text-[#40196D] font-bold text-[20px]">Account</div>
+        <div className="my-3  text-[#40196D] font-bold text-[20px]">Account</div>
         <div className="w-[75%] max-md:w-[95%] border border-gray-100 flex flex-col items-center min-h-[80vh] rounded-lg ">
           <div className="w-full min-h-[150px]  flex items-center justify-center">
             <div className="w-full h-full flex items-center justify-between max-lg:flex-col">
