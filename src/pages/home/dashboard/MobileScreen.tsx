@@ -1,5 +1,5 @@
 import { IoMdNotifications } from "react-icons/io"
-import francis from "../../../../../../FrancisUzoigwe/FrancisUzoigwe2/src/assets/francis.jpg"
+import francis from "../../../assets/pos.jpg"
 import { CgAddR } from "react-icons/cg"
 import { AiOutlineSchedule } from "react-icons/ai"
 import { BsArrowRightSquare } from "react-icons/bs"
