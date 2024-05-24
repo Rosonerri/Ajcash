@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: Bruv;
-  src: url(/font/Poppins-Light.ttf);
+  src: url(/font/Poppins-Regular.ttf);
 }
 
 .Bruv {
@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: Poppin;
-  src: url(/font/Poppins-Regular.ttf);
+  src: url(/font/Poppins-Light.ttf);
 }
 
 .Poppin {
