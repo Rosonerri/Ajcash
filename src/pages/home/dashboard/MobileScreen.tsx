@@ -1,11 +1,15 @@
 import { IoMdNotifications } from "react-icons/io"
-import francis from "../../../../../../FrancisUzoigwe/FrancisUzoigwe2/src/assets/francis.jpg"
+import francis from "../../../assets/pos.jpg"
 import { CgAddR } from "react-icons/cg"
 import { AiOutlineSchedule } from "react-icons/ai"
 import { BsArrowRightSquare } from "react-icons/bs"
 const MobileScreen = () => {
     return (
         <>
+
+
+
+        
             <div className="w-full min-h-[100vh] hidden max-md:flex flex-col items-center bg-white relative">
                 <div className="w-full flex flex-col h-[370px] items-center ">
                     <div className="my-3 w-full flex items-center flex-col fixed top-0">
