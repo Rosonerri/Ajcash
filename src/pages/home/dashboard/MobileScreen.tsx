@@ -3,13 +3,13 @@ import francis from "../../../assets/pos.jpg"
 import { CgAddR } from "react-icons/cg"
 import { AiOutlineSchedule } from "react-icons/ai"
 import { BsArrowRightSquare } from "react-icons/bs"
+import image from "../../../assets/team1.png"
+import { data } from "../../../apis/TransactionData"
 const MobileScreen = () => {
+    console.log("This is data: ", data)
+    data.price?.toLocalString()
     return (
         <>
-
-
-
-        
             <div className="w-full min-h-[100vh] hidden max-md:flex flex-col items-center bg-white relative">
                 <div className="w-full flex flex-col h-[370px] items-center ">
                     <div className="my-3 w-full flex items-center flex-col fixed top-0">
@@ -43,10 +43,32 @@ const MobileScreen = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex bg-black flex-col items-center">
-                    <div className="w-full bg-black text-white h-[100vh] sticky top-1  flex flex-col items-center">
+                <div className="w-full flex flex-col items-center">
+                    <div className="w-full bg-black rounded-tr-[30px] rounded-tl-[30px] text-white h-[100vh] overflow-y-scroll sticky top-1  flex flex-col items-center">
                         <div className="w-[50px] h-[5px] rounded-full bg-white my-3" />
-                        <div>Transactions</div>
+                        <div className="flex items-center justify-between w-[90%] text-[14px]">
+                            <div>Transactions</div>
+                            <div>View All</div>
+                        </div>
+                        <div className="flex w-full flex-col items-center">
+                            {data.map((el: any) => {
+                                return (
+                                    <div className="text-[#00FFFF] my-2 flex items-center w-[90%] justify-between ">
+                                        <div className="flex items-center">
+                                            <div className="mr-[10px] h-[40px] w-[40px] rounded-full">
+                                                <img src={image} alt="" className="w-full h-full rounded-full" />
+                                            </div>
+                                            <div>
+                                                <div className="text-[14px]">{el.name}</div>
+                                                <div className="text-[11px]">{el.data}</div>
+                                            </div>
+                                        </div>
+                                        <div className="text-[14px]">₦{el.price}</div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+
                     </div>
                 </div>
             </div>
