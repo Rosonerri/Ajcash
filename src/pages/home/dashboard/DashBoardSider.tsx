@@ -23,10 +23,15 @@ const DashBoardSider = () => {
 
   return (
     <>
-      <div className={`${toggle ? "w-[200px] " : "w-[100px]"} h-screen flex-col flex `}>
+      <div
+        className={`${
+          toggle ? "w-[200px] " : "w-[100px]"
+        } h-screen flex-col flex `}
+      >
         <div
-          className={`${toggle ? "w-[200px]" : "w-[100px]"
-            } h-screen fixed flex flex-col items-center`}
+          className={`${
+            toggle ? "w-[200px]" : "w-[100px]"
+          } h-screen fixed flex flex-col items-center`}
         >
           <div className="my-6 w-full justify-end flex absolute -mr-7 text-[#a0a0a0] hover:cursor-pointer">
             {toggle ? (
@@ -53,8 +58,9 @@ const DashBoardSider = () => {
               </div>
             </Link>
             <div
-              className={`my-[23px] flex items-center  ${active === "/dashboard" ? "bg-white text-[#40196D]" : ""
-                }  px-4 py-2 rounded-md transition-all duration-300 hover:cursor-pointer`}
+              className={`my-[23px] flex items-center  ${
+                active === "/dashboard" ? "bg-white text-[#40196D]" : ""
+              }  px-4 py-2 rounded-md transition-all duration-300 hover:cursor-pointer`}
               onClick={() => {
                 navigate("/dashboard");
               }}
@@ -66,8 +72,9 @@ const DashBoardSider = () => {
               {toggle && <div>DashBoard</div>}
             </div>
             <div
-              className={`my-[23px] flex items-center  ${active === "/dashboard/send" ? "bg-white text-[#40196D]" : ""
-                }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
+              className={`my-[23px] flex items-center  ${
+                active === "/dashboard/send" ? "bg-white text-[#40196D]" : ""
+              }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
               onClick={() => {
                 navigate("/dashboard/send");
               }}
@@ -79,8 +86,9 @@ const DashBoardSider = () => {
               {toggle && <div>Send Money</div>}
             </div>
             <div
-              className={`my-[23px] flex items-center  ${active === "/dashboard/pay" ? "bg-white text-[#40196D]" : ""
-                }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
+              className={`my-[23px] flex items-center  ${
+                active === "/dashboard/pay" ? "bg-white text-[#40196D]" : ""
+              }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
               onClick={() => {
                 navigate("/dashboard/pay");
               }}
@@ -92,8 +100,9 @@ const DashBoardSider = () => {
               {toggle && <div>Pay Money</div>}
             </div>
             <div
-              className={`my-[23px] flex items-center  ${active === "/dashboard/card" ? "bg-white text-[#40196D]" : ""
-                }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
+              className={`my-[23px] flex items-center  ${
+                active === "/dashboard/card" ? "bg-white text-[#40196D]" : ""
+              }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
               onClick={() => {
                 navigate("/dashboard/card");
               }}
@@ -105,8 +114,9 @@ const DashBoardSider = () => {
               {toggle && <div>Card</div>}
             </div>
             <div
-              className={`my-[23px] flex items-center  ${active === "/dashboard/budget" ? "bg-white text-[#40196D]" : ""
-                }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
+              className={`my-[23px] flex items-center  ${
+                active === "/dashboard/budget" ? "bg-white text-[#40196D]" : ""
+              }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
               onClick={() => {
                 navigate("/dashboard/budget");
               }}
@@ -118,8 +128,9 @@ const DashBoardSider = () => {
               {toggle && <div>Budget</div>}
             </div>
             <div
-              className={`my-[23px] flex items-center  ${active === "/dashboard/account" ? "bg-white text-[#40196D]" : ""
-                }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
+              className={`my-[23px] flex items-center  ${
+                active === "/dashboard/account" ? "bg-white text-[#40196D]" : ""
+              }  px-4 py-2 rounded-md transition-all duration-300  hover:cursor-pointer`}
               onClick={() => {
                 navigate("/dashboard/account");
               }}
@@ -130,28 +141,31 @@ const DashBoardSider = () => {
               </div>
               {toggle && <div>Account</div>}
             </div>
-            <div className="my-[25px] ml-3 flex items-center hover:cursor-pointer">
+          </div>
+          <div className="flex-1" />
+          <div className="w-full flex justify-center items-center flex-col">
+            <div
+              className="w-[80%] my-2 h-[100px] border bg-white rounded-md text-[#40196D] flex-col flex items-center justify-center hover:cursor-pointer"
+              onClick={() => {
+                Swal.fire({
+                  icon: "error",
+                  title: "Unable to proceed",
+                  text: "For this to be possible please provide all required information to get started",
+                });
+              }}
+            >
+              <div>
+                <GiArmorUpgrade className="text-2xl" />
+              </div>
+              {toggle && <div className="">Upgrade Account</div>}
+            </div>
+            <div className="w-[80%] my-[25px] flex items-center hover:cursor-pointer">
               {" "}
               <div className="mr-2">
                 <IoIosLogOut className="text-3xl" />
               </div>
-              {toggle && <div>Logout</div>}
+              {toggle && <div className="">Logout</div>}
             </div>
-          </div>
-          <div
-            className="w-[80%] my-2 h-[100px] border bg-white rounded-md text-[#40196D] flex-col flex items-center justify-center hover:cursor-pointer"
-            onClick={() => {
-              Swal.fire({
-                icon: "error",
-                title: "Unable to proceed",
-                text: "For this to be possible please provide all required information to get started",
-              });
-            }}
-          >
-            <div>
-              <GiArmorUpgrade className="text-2xl" />
-            </div>
-            {toggle && <div className="">Upgrade Account</div>}
           </div>
         </div>
       </div>
