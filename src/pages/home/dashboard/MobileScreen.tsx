@@ -12,7 +12,7 @@ const MobileScreen = () => {
     data.price?.toLocalString()
     return (
         <>
-            <div className="w-full min-h-[100vh] hidden max-md:flex flex-col items-center bg-white relative">
+            <div className="w-full min-h-[100vh] hidden max-lg:flex flex-col items-center bg-white relative">
                 <div className="w-full flex flex-col h-[370px] items-center ">
                     <div className="my-3 w-full flex items-center flex-col fixed top-0">
                         <div className="w-[95%] flex items-center justify-between">
@@ -61,9 +61,10 @@ const MobileScreen = () => {
                 </div>
                 <div className="w-full flex flex-col items-center">
                     <div className="w-full bg-black rounded-tr-[30px] rounded-tl-[30px] text-white h-[100vh] overflow-y-scroll sticky top-1  flex flex-col items-center">
-                        <div className="w-[50px] h-[5px] rounded-full bg-white my-3" />
-                        <div className="flex items-center justify-between w-[90%] text-[14px]">
+                       
+                        <div className="flex items-center justify-between w-[90%] text-[14px] my-3 sticky top-1">
                             <div>Transactions</div>
+                            <div className="w-[50px] h-[5px] rounded-full bg-white my-3" />
                             <div>View All</div>
                         </div>
                         <div className="flex w-full flex-col items-center">

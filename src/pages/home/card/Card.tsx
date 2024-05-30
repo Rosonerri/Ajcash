@@ -35,7 +35,7 @@ const Card = () => {
           <div className="my-12 " />
           <div className="text-[15px] font-[Bruv] ">Spend online and offline with your Ajcash cards</div>
 
-          <div className="py-4 px-4 shadow-md hover:cursor-pointer w-[80%] rounded-lg border my-3 flex items-center justify-between">
+          <div className="py-4 px-4 shadow-md hover:cursor-pointer w-[90%] rounded-lg border my-3 flex items-center justify-between">
             <div className="flex items-center w-full">
               <div className="w-[25px] h-[25px] rounded-md flex items-center justify-center bg-gray-200"><BsCreditCardFill /></div>
               <div className="ml-5">
@@ -45,7 +45,7 @@ const Card = () => {
             </div>
             <div><MdChevronRight /></div>
           </div>
-          <div className="py-4 px-4 shadow-md  hover:cursor-pointer w-[80%]  rounded-lg border my-3 flex items-center justify-between">
+          <div className="py-4 px-4 shadow-md  hover:cursor-pointer w-[90%]  rounded-lg border my-3 flex items-center justify-between">
             <div className="flex items-center w-full">
               <div className="w-[25px] h-[25px] rounded-md flex items-center justify-center bg-gray-200"><FaQuestion className="text-green-400" /></div>
               <div className="ml-5">
