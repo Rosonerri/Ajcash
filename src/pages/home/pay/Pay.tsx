@@ -5,7 +5,12 @@ import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
 import { GrSolaris } from "react-icons/gr";
 import { MdEmojiTransportation, MdOutlineWifi } from "react-icons/md";
-import { FaAngleLeft, FaCcMastercard, FaLightbulb, FaUserGraduate } from "react-icons/fa6";
+import {
+  FaAngleLeft,
+  FaCcMastercard,
+  FaLightbulb,
+  FaUserGraduate,
+} from "react-icons/fa6";
 import { PiTelevisionSimpleLight } from "react-icons/pi";
 import { GiCardAceDiamonds } from "react-icons/gi";
 import { TbGiftCardFilled } from "react-icons/tb";
@@ -14,7 +19,6 @@ import { CiBank } from "react-icons/ci";
 import { VscTerminalBash } from "react-icons/vsc";
 import { SiGooglemybusiness } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
-
 
 const Pay = () => {
   const motionVariant = {
@@ -63,7 +67,7 @@ const Pay = () => {
     },
     {
       option: "TV",
-      url: "/dashboard/pay/tv",
+      url: "/dashboard/tv",
       icon: <PiTelevisionSimpleLight />,
     },
     {
@@ -98,12 +102,12 @@ const Pay = () => {
     },
     {
       option: "Pay With Bank",
-      url: "/dashboard/pay/paywithussd",
+      url: "/dashboard/with-bank",
       icon: <CiBank />,
     },
     {
       option: "POS Terminal",
-      url: "/dashboard/pay/posterminal",
+      url: "/dashboard/pos-terminal",
       icon: <VscTerminalBash />,
     },
     {
@@ -130,7 +134,7 @@ const Pay = () => {
       setScroll(false);
     }
   });
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="w-full min-h-[100vh]">
@@ -140,22 +144,26 @@ const Pay = () => {
         animate="open"
         className={`p-[20px] w-full flex flex-col items-center`}
       >
-        <div className="font-[Blud] text-[20px] my-3  text-[#40196D]">
-          Pay
-        </div>
+        <div className="font-[Blud] text-[20px] my-3  text-[#40196D]">Pay</div>
         <div className="w-full border rounded-md h-[95%] pb-5 flex flex-col items-center">
           <div className="my-3 w-full ml-3 flex justify-start">
-            <div className="flex items-center  hover:cursor-pointer " onClick={() => {
-              navigate(-1)
-            }}>
-              <div className="ml-2"><FaAngleLeft /></div>
+            <div
+              className="flex items-center  hover:cursor-pointer "
+              onClick={() => {
+                navigate(-1);
+              }}
+            >
+              <div className="ml-2">
+                <FaAngleLeft />
+              </div>
               <div className="ml-1">Back</div>
             </div>
           </div>
           <div className="my-4" />
           <div
-            className={`w-[90%] h-[50px] border overflow-hidden rounded-md ${scroll ? "sticky top-16 shadow-lg" : "relative"
-              }`}
+            className={`w-[90%] h-[50px] border overflow-hidden rounded-md ${
+              scroll ? "sticky top-16 shadow-lg" : "relative"
+            }`}
           >
             <div className="absolute left-2 top-[18px]">
               <IoSearchOutline className="text-gray-400" />

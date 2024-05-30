@@ -27,6 +27,9 @@ import EditProfile from "../pages/home/profile/EditProfile";
 import ViewProfile from "../pages/home/profile/ViewProfile";
 import Education from "../pages/home/pay/Education";
 import Gaming from "../pages/home/pay/Gaming";
+import POS from "../pages/home/pay/POS";
+import TV from "../pages/home/pay/TV";
+import PayWithBank from "../pages/home/pay/PayWithBank";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -144,6 +147,18 @@ export const mainRoute = createBrowserRouter([
       {
         path: "/dashboard/legal",
         element: <Legal />,
+      },
+      {
+        path: "/dashboard/pos-terminal",
+        element: <POS />,
+      },
+      {
+        path: "/dashboard/tv",
+        element: <TV />,
+      },
+      {
+        path: "/dashboard/with-bank",
+        element: <PayWithBank />,
       },
     ],
   },
